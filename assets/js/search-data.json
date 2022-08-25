@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) question_and_answer(&quot;What is personal finance?&quot;) question_and_answer(&quot;What is categorical data?&quot;) question_and_answer(&quot;What is quantitative data?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 . Question: What is personal finance? Answer: Question: What is categorical data? Answer: Question: What is quantitative data? Answer: .",
-            "url": "https://bushku.github.io/APCSP_1/2022/08/24/myquiz.html",
-            "relUrl": "/2022/08/24/myquiz.html",
-            "date": " • Aug 24, 2022"
+            "url": "https://bushku.github.io/APCSP_1/2022/08/25/myquiz.html",
+            "relUrl": "/2022/08/25/myquiz.html",
+            "date": " • Aug 25, 2022"
         }
         
     
