@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Title",
-            "content": "def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) question_and_answer(&quot;What is personal finance?&quot;) question_and_answer(&quot;What is categorical data?&quot;) question_and_answer(&quot;What is quantitative data?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 3 print(&quot;You got&quot;,correct,&quot;out of&quot;,questions,&quot;correct&quot;) . Question: What is personal finance? Answer: Question: What is categorical data? Answer: Question: What is quantitative data? Answer: You got 3 out of 3 correct .",
+            "content": "My Quiz . def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) question_and_answer(&quot;What is personal finance?&quot;) question_and_answer(&quot;What is categorical data?&quot;) question_and_answer(&quot;What is quantitative data?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 3 print(&quot;You got&quot;,correct,&quot;out of&quot;,questions,&quot;correct&quot;) . Question: What is personal finance? Answer: Question: What is categorical data? Answer: Question: What is quantitative data? Answer: You got 3 out of 3 correct .",
             "url": "https://bushku.github.io/APCSP_1/2022/08/25/myquiz.html",
             "relUrl": "/2022/08/25/myquiz.html",
             "date": " • Aug 25, 2022"
