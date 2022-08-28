@@ -94,6 +94,17 @@
 
   
       ,"page2": {
+          "title": "Personal Page",
+          "content": "My Personal Page . .",
+          "url": "https://bushku.github.io/APCSP_1/_pages/MyPersonalPage.html",
+          "relUrl": "/_pages/MyPersonalPage.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://bushku.github.io/APCSP_1/about/",
@@ -125,7 +136,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://bushku.github.io/APCSP_1/robots.txt",
