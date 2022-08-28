@@ -7,4 +7,4 @@ title: Personal Page
 ---
 # My Personal Page
 
-![diagram]({{site.baseurl}}/images/shruthid.png "https://github.com/bushku/APCSP_1")
+![diagram.png]({{site.baseurl}}/images/shruthid.png "https://github.com/bushku/APCSP_1")
