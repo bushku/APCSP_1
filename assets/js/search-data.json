@@ -91,16 +91,16 @@
   
 
   
-
-  
-      ,"page2": {
+      ,"page1": {
           "title": "Personal Page",
           "content": "My Personal Page . .",
-          "url": "https://bushku.github.io/APCSP_1/_pages/MyPersonalPage.html",
-          "relUrl": "/_pages/MyPersonalPage.html",
+          "url": "https://bushku.github.io/APCSP_1/_pages/2022-08-28-MyPersonalPage.html",
+          "relUrl": "/_pages/2022-08-28-MyPersonalPage.html",
           "date": ""
       }
       
+  
+
   
 
   
