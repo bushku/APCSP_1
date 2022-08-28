@@ -83,6 +83,17 @@
       ,"page0": {
           "title": "Personal Page",
           "content": "My Personal Page . .",
+          "url": "https://bushku.github.io/APCSP_1/images/2022-08-27-personalpage.png",
+          "relUrl": "/images/2022-08-27-personalpage.png",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page1": {
+          "title": "Personal Page",
+          "content": "My Personal Page . .",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-08-28-MyPersonalPage.html",
           "relUrl": "/_pages/2022-08-28-MyPersonalPage.html",
           "date": ""
@@ -91,9 +102,20 @@
   
 
   
+      ,"page2": {
+          "title": "Personal Page",
+          "content": "My Personal Page . .",
+          "url": "https://bushku.github.io/APCSP_1/images/2022-08-28-personalpage.png",
+          "relUrl": "/images/2022-08-28-personalpage.png",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page2": {
+
+  
+      ,"page4": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://bushku.github.io/APCSP_1/about/",
@@ -125,7 +147,7 @@
   
 
   
-      ,"page11": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://bushku.github.io/APCSP_1/robots.txt",
