@@ -125,8 +125,8 @@
 
   
       ,"page3": {
-          "title": "Week 2 - HTML Fragments",
-          "content": "|x |y | . |0 |3 | |1 |5 |2 |7 | |3 |9 | |4 |11 | .",
+          "title": "Linear Table",
+          "content": "x y . 0 | 3 | . 1 | 5 | . 2 | 7 | . 3 | 9 | . 4 | 11 | .",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-09-01-LinearTable.html",
           "relUrl": "/_pages/2022-09-01-LinearTable.html",
           "date": ""
