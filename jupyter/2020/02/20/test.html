@@ -87,7 +87,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -727,6 +727,60 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+
+<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is personal finance?"</span><span class="p">)</span>
+<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is categorical data?"</span><span class="p">)</span>
+<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is quantitative data?"</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You got"</span><span class="p">,</span><span class="n">correct</span><span class="p">,</span><span class="s2">"out of"</span><span class="p">,</span><span class="n">questions</span><span class="p">,</span><span class="s2">"correct"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Question: What is personal finance?
+Answer: 
+Question: What is categorical data?
+Answer: 
+Question: What is quantitative data?
+Answer: 
+You got 3 out of 3 correct
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
