@@ -46,10 +46,10 @@
   
     
         ,"post4": {
-            "title": "Title",
-            "content": ". toc: true layout: post description: HTML fragments are portions of code used in a greater coding system that enable functionality specific to the current page. Fragments in HTML are a way to abstract complexity. The greater coding system we use is GitHub Pages which uses Jekyll and Liquid to build and programmatically construct fragments into the larger web site. categories: [APCSP] . title: My Quiz . def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) question_and_answer(&quot;What is personal finance?&quot;_and_&quot;a budget used for budgeting&quot;) question_and_answer(&quot;What is categorical data?&quot;) question_and_answer(&quot;What is quantitative data?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 3 print(&quot;You got&quot;,correct,&quot;out of&quot;,questions,&quot;correct&quot;) .",
-            "url": "https://bushku.github.io/APCSP_1/2022/08/25/myquiz.html",
-            "relUrl": "/2022/08/25/myquiz.html",
+            "title": "My Quiz",
+            "content": "def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) question_and_answer(&quot;What is personal finance?&quot;_and_&quot;a budget used for budgeting&quot;) question_and_answer(&quot;What is categorical data?&quot;) question_and_answer(&quot;What is quantitative data?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 3 print(&quot;You got&quot;,correct,&quot;out of&quot;,questions,&quot;correct&quot;) .",
+            "url": "https://bushku.github.io/APCSP_1/apcsp/2022/08/25/myquiz.html",
+            "relUrl": "/apcsp/2022/08/25/myquiz.html",
             "date": " • Aug 25, 2022"
         }
         
