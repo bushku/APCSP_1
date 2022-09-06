@@ -172,7 +172,7 @@
   
       ,"page7": {
           "title": "",
-          "content": "Objectives . . This Conceptual Framework teaches College Boards 5 Big Ideas of AP Computer Science Principles, Python, JavaScript, and a Web Site application development together in an integrated fashion. The purpose is to teach College Board requirements while adding languages, tools, frameworks, and methodologies that meet Career Technical Education (CTE) needs. The outcome is preparing the High School student for the AP Test and simultaneously building the skills required for Computer Science internships. . . Blogs .",
+          "content": "This site is built with fastpages, An easy to use blogging platform with extra features for Jupyter Notebooks. . . fastpages automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts. A full list of features can be found on GitHub. . You can edit the index.html file to change this content. . Posts .",
           "url": "https://bushku.github.io/APCSP_1/",
           "relUrl": "/",
           "date": ""
