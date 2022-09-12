@@ -17,3 +17,16 @@ Steps:
 4. Drag playsound(url, loop)
 5. Click musical sound in url
 6. Run the code
+
+[College Board Task](https://nighthawkcoders.github.io/APCSP//collegeboard/create)
+
+Performance Task Skills
+ - Program Purpose and Function
+ - Abstracting Data
+ - Managing Complexity
+ - Procedural Abstraction
+ - Algorithm Implementation
+ - Testing
+The purpose of my quiz is to teach math and science.
+
+[AppLab Quiz](https://studio.code.org/projects/applab/0GajejrIcQnZEY_5WX8TrwFF4vNIg-7P6ApgFWzN3w0)
