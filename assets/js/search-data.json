@@ -201,9 +201,20 @@
   
 
   
+      ,"page5": {
+          "title": "Collaboration",
+          "content": "What Will We Learn? . Explain how computing innovations are improved through collaboration | Demonstrate effective interpersonal skills during collaboration | . Facebook . At facebook, there is a lot of different departments | There’s people that do art, sound and video | Android development, IOS development, and all these people have to get together, not just coders to figure out what’s best for the public | does own Instogram, WhatsApp, Oculus, many different entities that require so many moving parts and together | Effective collaboration produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it | A computing innovation includes a program as an integral part of its function | A computing innovation can be physical or a nonphysical computing concept | . Takeaway Thoughts . Interpersonal skills learned through collaboration: . Communication | Consensus Building | Conflict Resolution | Negotiation | . If you want to go fast, go alone. If you want to go far, go together. .",
+          "url": "https://bushku.github.io/APCSP_1/_pages/2022-09-13-Collaboration.html",
+          "relUrl": "/_pages/2022-09-13-Collaboration.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page6": {
+
+  
+      ,"page7": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://bushku.github.io/APCSP_1/about/",
@@ -214,7 +225,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "",
           "content": "This site is built with fastpages, An easy to use blogging platform with extra features for Jupyter Notebooks. . . fastpages automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts. A full list of features can be found on GitHub. . You can edit the index.html file to change this content. . Posts .",
           "url": "https://bushku.github.io/APCSP_1/",
@@ -244,7 +255,7 @@
   
 
   
-      ,"page15": {
+      ,"page16": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://bushku.github.io/APCSP_1/robots.txt",
