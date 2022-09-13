@@ -4,7 +4,7 @@ layout: post
 comments: true
 description: These are college board Collaboration Notes
 categories: [APCSP]
-title:  Collaboration
+title: Collaboration
 ---
 
 ## What Will We Learn?
