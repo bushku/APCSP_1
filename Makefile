@@ -1,4 +1,4 @@
-help:
+make sehelp:
 	cat Makefile
 
 # start (or restart) the services
