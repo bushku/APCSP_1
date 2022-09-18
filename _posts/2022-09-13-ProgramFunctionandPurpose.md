@@ -38,9 +38,9 @@ What type of "events" can use a trigger?
  - keyboard entries
  - audio trigger
  
- ## Computing Innovations
+## Computing Innovations
  
- ### Categories of Innovations
+### Categories of Innovations
   - Applications
     1. Games
     2. Social Media: Allows users to connect from a distance and archive their activities
