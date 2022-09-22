@@ -245,9 +245,20 @@
   
 
   
+      ,"page6": {
+          "title": "My Work",
+          "content": "",
+          "url": "https://bushku.github.io/APCSP_1/_pages/2022-09-22-MyWork.html",
+          "relUrl": "/_pages/2022-09-22-MyWork.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page7": {
+
+  
+      ,"page8": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://bushku.github.io/APCSP_1/about/",
@@ -258,7 +269,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "",
           "content": "This site is built with fastpages, An easy to use blogging platform with extra features for Jupyter Notebooks. . . fastpages automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts. A full list of features can be found on GitHub. . You can edit the index.html file to change this content. . Posts .",
           "url": "https://bushku.github.io/APCSP_1/",
@@ -285,7 +296,7 @@
   
 
   
-      ,"page15": {
+      ,"page16": {
           "title": "",
           "content": "This site is built with fastpages, An easy to use blogging platform with extra features for Jupyter Notebooks. . . fastpages automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts. A full list of features can be found on GitHub. . You can edit the index.html file to change this content. . Posts .",
           "url": "https://bushku.github.io/APCSP_1/page2/",
@@ -299,7 +310,7 @@
   
 
   
-      ,"page17": {
+      ,"page18": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://bushku.github.io/APCSP_1/robots.txt",
