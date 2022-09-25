@@ -290,7 +290,7 @@ object ; [ 1, 2, 3 ]
 <span class="p">}</span>
 
 <span class="c1">// make a new Person and assign to variable teacher</span>
-<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Mr M&quot;</span><span class="p">,</span> <span class="s2">&quot;jm1021&quot;</span><span class="p">,</span> <span class="mf">1977</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;Econ&quot;</span><span class="p">,</span> <span class="nx">Mr</span><span class="p">.</span> <span class="nx">Curry</span><span class="p">);</span>
 <span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Teacher&quot;</span><span class="p">);</span>
 
 <span class="c1">// output of Object and JSON/string associated with Teacher</span>
@@ -307,10 +307,23 @@ object ; [ 1, 2, 3 ]
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>object ; Person { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#39;Teacher&#39; }
-string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;classOf&#34;:1977,&#34;role&#34;:&#34;Teacher&#34;}
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:22
+var L104 = new Person(&#34;1&#34;, &#34;Econ&#34;, Mr. Curry);
+                                   ^
+
+ReferenceError: Mr is not defined
+    at evalmachine.&lt;anonymous&gt;:22:36
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
 </div>
 </div>
 
@@ -492,11 +505,24 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:2
+Classroom.prototype._toHtml = function() {
+^
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div style='display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Period</mark></th><th><mark>Subject</mark></th><th><mark>Teacher</mark></th><th><mark>Room #</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>1977</td><td>Teacher</td><tr><tr><td>Anthony</td><td>tonyhieu</td><td>2022</td><td>Student</td><tr><tr><td>Bria</td><td>B-G101</td><td>2023</td><td>Student</td><tr><tr><td>Allie</td><td>xiaoa0</td><td>2023</td><td>Student</td><tr><tr><td>Tigran</td><td>Tigran7</td><td>2023</td><td>Student</td><tr><tr><td>Rebecca</td><td>Rebecca-123</td><td>2023</td><td>Student</td><tr><tr><td>Vidhi</td><td>unknown</td><td>2024</td><td>Student</td><tr></table></div>
+ReferenceError: Classroom is not defined
+    at evalmachine.&lt;anonymous&gt;:2:1
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
 </div>
-
 </div>
 
 </div>
