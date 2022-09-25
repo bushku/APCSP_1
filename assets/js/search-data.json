@@ -202,6 +202,17 @@
   
   
       ,"page0": {
+          "title": "Frontend",
+          "content": "Tutorial | . Code in this Sub Menu . Tutorial: This is a Jupyter Notebook built using the JavaScript kernel. This provides a few fundamentals of JavaScript language. Pull this file into VSCode and explore the fundamentals of the language. | . Frontend Web Development Overview . . Frontend web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website. In this class, we will be using Fastpages on top of GitHub Pages to maximize our presentations, while minimizing our front-end coding. GitHub Pages deployment is performed through Jekyll, which regenerates the website automatically after each commit, tracking can be seen in Actions tab within GitHub. | HTML generation is performed through Liquid, a template language (similar to Jinja2 or Thymeleaf). | CSS style layout is provided by using Themes provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript. | JavaScript enable pages to have actions, fetch content, animate, etc | . . .",
+          "url": "https://bushku.github.io/APCSP_1/frontend/overview",
+          "relUrl": "/frontend/overview",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page1": {
           "title": "Personal Page",
           "content": "My Personal Page . .",
           "url": "https://bushku.github.io/APCSP_1/images/2022-08-27-personalpage.png",
@@ -212,7 +223,7 @@
   
 
   
-      ,"page1": {
+      ,"page2": {
           "title": "Personal Page",
           "content": "My Personal Page . .",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-08-28-MyPersonalPage.html",
@@ -223,7 +234,7 @@
   
 
   
-      ,"page2": {
+      ,"page3": {
           "title": "Personal Page",
           "content": "My Personal Page . .",
           "url": "https://bushku.github.io/APCSP_1/images/2022-08-28-personalpage.png",
@@ -234,7 +245,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Weekly Work Table",
           "content": "Week Projects . 0 | First Jupyter Notebook,First Markdown | . 1 | My Quiz, Bash Jupyter Notebook, Personal Page | . 2 | Lists and Dictionaries | .",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-08-29-WeeklyWork.html",
@@ -245,7 +256,7 @@
   
 
   
-      ,"page4": {
+      ,"page5": {
           "title": "Linear Table",
           "content": "x y . 0 | 3 | . 1 | 5 | . 2 | 7 | . 3 | 9 | . 4 | 11 | .",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-09-01-LinearTable.html",
@@ -256,7 +267,7 @@
   
 
   
-      ,"page5": {
+      ,"page6": {
           "title": "Collaboration",
           "content": "What Will We Learn? . Explain how computing innovations are improved through collaboration | Demonstrate effective interpersonal skills during collaboration | Explain how computing innovations are developed by groups of people | . How to Collaborate in Class . Pair Programming: Two programmers work together as a pair. One (the driver) writes program code, while the other (the observer, pointer, or navigator) reviews each line of program code as it is typed in. | Think-Pair-Share: Students tink through a problem alone, pair with a partner to share ideas, and then share results to the class | . Leave Comments in Code . Communicate to your partner(s) | Communicate to yourself | Acknowledge code segments used from other sources | Acknowledge media used from other sources | Differentiate what you and your partner(s) did | Clarify the functionality of your code | . Online Tools . repl.it: multiplayer | GitHub: collaboration and repository | Shared document or folder | Ask friends and family to test drive your program and give you feedback | . Facebook . At facebook, there is a lot of different departments | There’s people that do art, sound and video | Android development, IOS development, and all these people have to get together, not just coders to figure out what’s best for the public | does own Instogram, WhatsApp, Oculus, many different entities that require so many moving parts and together | Effective collaboration produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it | A computing innovation includes a program as an integral part of its function | A computing innovation can be physical or a nonphysical computing concept | . Takeaway Thoughts . Interpersonal skills learned through collaboration: . Communication | Consensus Building | Conflict Resolution | Negotiation | . If you want to go fast, go alone. If you want to go far, go together. .",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-09-13-Collaboration.html",
@@ -267,7 +278,7 @@
   
 
   
-      ,"page6": {
+      ,"page7": {
           "title": "My Work",
           "content": "",
           "url": "https://bushku.github.io/APCSP_1/_pages/2022-09-22-MyWork.html",
@@ -280,7 +291,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://bushku.github.io/APCSP_1/about/",
@@ -291,7 +302,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "",
           "content": "This site is built with fastpages, An easy to use blogging platform with extra features for Jupyter Notebooks. . . fastpages automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts. A full list of features can be found on GitHub. . You can edit the index.html file to change this content. . Posts .",
           "url": "https://bushku.github.io/APCSP_1/",
@@ -318,7 +329,7 @@
   
 
   
-      ,"page16": {
+      ,"page17": {
           "title": "",
           "content": "This site is built with fastpages, An easy to use blogging platform with extra features for Jupyter Notebooks. . . fastpages automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts. A full list of features can be found on GitHub. . You can edit the index.html file to change this content. . Posts .",
           "url": "https://bushku.github.io/APCSP_1/page2/",
@@ -332,7 +343,7 @@
   
 
   
-      ,"page18": {
+      ,"page19": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://bushku.github.io/APCSP_1/robots.txt",
