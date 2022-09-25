@@ -4,7 +4,7 @@ description: Quick launch into Variables, Functions, Arrays, IJavaScript HTML, u
 title: JavaScript Tutorial
 toc: true
 comments: true
-permalink: /techtalk/javascript
+permalink: /myquiz/javascript
 image: /images/javascript.png
 categories: [techtalk]
 nb_path: _notebooks/2022-09-20-JavaScript.ipynb
