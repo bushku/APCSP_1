@@ -7,4 +7,4 @@ categories: [APCSP]
 title:  Scrum Process
 ---
 
-![logo.png]({{site.baseurl}}/images/Scrum Board Process(1).png "https://github.com/bushku/APCSP_1")
+![Scrum Board Process (1).png]({{site.baseurl}}/images/Scrum Board Process (1).png "https://github.com/bushku/APCSP_1")
