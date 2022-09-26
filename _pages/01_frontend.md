@@ -8,6 +8,7 @@ permalink: /frontend/overview
 
 ### Code in this Sub Menu
 - Tutorial: This is a Jupyter Notebook built using the JavaScript kernel.  This provides a few fundamentals of JavaScript language.  Pull this file into VSCode and explore the fundamentals of the language.
+- Bash Blog - This is a jupyter notebook for installation checks.
 
 ### Frontend Web Development Overview
 
