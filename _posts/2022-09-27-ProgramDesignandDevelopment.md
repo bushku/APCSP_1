@@ -57,3 +57,4 @@ Many times developers use code segments, procedures, algorithms, & more that are
  - this text doesn't affect the program
  - comments are for programmers to read
  - this is a form of documentation and can be useful when programmers collaborate or work individually
+Socre: 3/3
