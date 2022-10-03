@@ -8,18 +8,14 @@ title:  Program Design and Development
 ---
 
 ## How is a Program Developed?
- 1. starts with an idea
+    - starts with an idea
     - developed with a specific purpose in mind
     - developers follow specific steps and stick to plan
     - sometimes development is more exploratory than anything, and steps are dictated by what happens (both good & bad)
-       a) Think about early AI projects, like personal assistants
-    - developers start investigating the problem/purpose and reflect
-       a) Investigation - important step in process
-       b) Developers must:
-        - determine requirements of program
-        - understand constraints
-        - understand user concerns & interests
-       c) How developers investigate:
+## Developers start investigating the problem/purpose and reflect
+        - Investigation - important step in process
+        - Developers must determine requirements of program, understand constraints, and understand user concerns & interests
+## How developers investigate:
         - surveys
         - user testing
         - interviews
@@ -57,8 +53,8 @@ title:  Program Design and Development
      d) The program documentation should include the author's name and the source of any code segments being used
      e) This protion of the documentation may resemble a bibliography or a works cited page in a research paper
 ## How do programmers document while programming?
- - Most programming languages offer a commenting feature, although some do not
- - commenting allows programmers to write text within the program
- - this text doesn't affect the program
- - comments are for programmers to read
- - this is a form of documentation and can be useful when programmers collaborate or work individually
+   - Most programming languages offer a commenting feature, although some do not
+   - commenting allows programmers to write text within the program
+   - this text doesn't affect the program
+   - comments are for programmers to read
+   - this is a form of documentation and can be useful when programmers collaborate or work individually
