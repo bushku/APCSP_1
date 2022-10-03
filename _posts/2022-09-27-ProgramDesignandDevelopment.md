@@ -58,14 +58,7 @@ title:  Program Design and Development
      e) This protion of the documentation may resemble a bibliography or a works cited page in a research paper
 ## How do programmers document while programming?
  - Most programming languages offer a commenting feature, although some do not
-  a) commenting allows programmers to write text within the program
-  b) this text doesn't affect the program
-  c) comments are for programmers to read
-  d) this is a form of documentation and can be useful when programmers collaborate or work individually
-## Examples of Comments
-# Text Languages:
-  a) Python
-  b) Java
-# Block Based Languages:
-  a) Scratch
-  b) MIT App Inventor
+ - commenting allows programmers to write text within the program
+ - this text doesn't affect the program
+ - comments are for programmers to read
+ - this is a form of documentation and can be useful when programmers collaborate or work individually
