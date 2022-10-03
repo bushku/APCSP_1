@@ -63,9 +63,9 @@ title:  Program Design and Development
   c) comments are for programmers to read
   d) this is a form of documentation and can be useful when programmers collaborate or work individually
 ## Examples of Comments
- - Text Languages:
+# Text Languages:
   a) Python
   b) Java
- - Block Based Languages:
+# Block Based Languages:
   a) Scratch
   b) MIT App Inventor
