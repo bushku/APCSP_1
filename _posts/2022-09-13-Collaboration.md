@@ -50,3 +50,4 @@ Interpersonal skills learned through collaboration:
 
  If you want to go fast, go alone. If you want to go far, go together.
 
+I had difficulties with question 3: A company that develops mobile applications wants to involve users in the software development process. Which of the following best explains the benefit in having users participate?
