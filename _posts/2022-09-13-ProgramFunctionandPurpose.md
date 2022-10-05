@@ -72,4 +72,3 @@ The program "jumps" to the code segment according to the event:
 The program code is not necessarily executed "in order":
  - Code segments are executed as they are called, according to the events triggered
 
-I had difficulties with question 1: Which of the following best describes the behavior of the code segment?
