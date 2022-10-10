@@ -537,7 +537,7 @@ window.onload = wrap_img;
          <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
          <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
          <span class="s2">&quot;checkout&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>     <span class="c1"># &#39;checkout&#39; is created in the table in order for it to be an interactive input.</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mf">6.97</span>                   <span class="c1"># creates the variable &#39;total&#39; and sets it to 0.</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>                   <span class="c1"># creates the variable &#39;total&#39; and sets it to 0.</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>               <span class="c1"># prints menu&#39;s components.</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>    <span class="c1"># &#39;k&#39; = item&#39;s name. &#39;v&#39; = item&#39;s price(numeric value).</span>
@@ -577,6 +577,9 @@ fries  $1.99
 drink  $0.99
 checkout  $0
 Please select an item. Type &#39;checkout&#39; to finish your order.
+burger will be $3.99
+fries will be $1.99
+drink will be $0.99
 Your total is $6.97! Enjoy!
 </pre>
 </div>
