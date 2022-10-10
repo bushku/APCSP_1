@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -533,21 +533,32 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>    <span class="c1"># creates the menu, its components, and each component&#39;s price.</span>
          <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
-         <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">}</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+         <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
+         <span class="s2">&quot;checkout&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>     <span class="c1"># &#39;checkout&#39; is created in the table in order for it to be an interactive input.</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mf">6.97</span>                   <span class="c1"># creates the variable &#39;total&#39; and sets it to 0.</span>
 
-<span class="c1">#shows the user the menu and prompts them to select an item</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>               <span class="c1"># prints menu&#39;s components.</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>    <span class="c1"># &#39;k&#39; = item&#39;s name. &#39;v&#39; = item&#39;s price(numeric value).</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#str changes a numeric value (v) into a character that can be printed.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please select an item. Type &#39;checkout&#39; to finish your order.&quot;</span><span class="p">)</span> <span class="c1">#tells users what they can do.</span>
 
-<span class="c1">#ideally the code should prompt the user multiple times</span>
-<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
-
-<span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<span class="n">checkout</span> <span class="o">=</span> <span class="mi">0</span>                <span class="c1"># checkout created and set to 0.</span>
+<span class="k">while</span> <span class="n">checkout</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>        <span class="c1"># while loop connected to checkout.</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu Type &#39;checkout&#39; to finish.&quot;</span><span class="p">)</span> <span class="c1">#tells users what they can do.</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>     <span class="c1">#changes input to lowercase to be user friendly.</span>
+    <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span> <span class="ow">or</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span> <span class="ow">or</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="c1">#this if statement allows for muiltple inputs to have the same output.</span>
+        <span class="nb">print</span><span class="p">(</span> <span class="n">item</span><span class="p">,</span> <span class="s2">&quot;will be $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]))</span> <span class="c1">#prints item info.</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>  <span class="c1"># adds the price of the item to total price.</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;checkout&quot;</span><span class="p">:</span>
+            <span class="n">checkout</span> <span class="o">=</span> <span class="mi">1</span>    <span class="c1">#Changes value of checkout that ends while loop.</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Try again, that item is not on the menu&quot;</span><span class="p">)</span> <span class="c1">#In case user makes a typo or tpyes an unknown item.</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">myorder</span> <span class="o">=</span> <span class="s2">&quot;Your total is $</span><span class="si">{:.2f}</span><span class="s2">! Enjoy!&quot;</span>                <span class="c1">#source: w3shools.com Python String Formatting</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">myorder</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -564,7 +575,9 @@ window.onload = wrap_img;
 burger  $3.99
 fries  $1.99
 drink  $0.99
-0
+checkout  $0
+Please select an item. Type &#39;checkout&#39; to finish your order.
+Your total is $6.97! Enjoy!
 </pre>
 </div>
 </div>
