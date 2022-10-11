@@ -142,45 +142,16 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="c1">#url = "https://jspell-checker.p.rapidapi.com/check"</span>
-
 <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://dnaber-languagetool.p.rapidapi.com/v2/languages"</span>
 
-<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"language"</span><span class="p">:</span> <span class="s2">"enUS"</span><span class="p">,</span>
-	<span class="s2">"fieldvalues"</span><span class="p">:</span> <span class="s2">"thiss is intresting"</span><span class="p">,</span>
-	<span class="s2">"config"</span><span class="p">:</span> <span class="p">{</span>
-		<span class="s2">"forceUpperCase"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-		<span class="s2">"ignoreIrregularCaps"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-		<span class="s2">"ignoreFirstCaps"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-		<span class="s2">"ignoreNumbers"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-		<span class="s2">"ignoreUpper"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-		<span class="s2">"ignoreDouble"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-		<span class="s2">"ignoreWordsWithNumbers"</span><span class="p">:</span> <span class="kc">True</span>
-	<span class="p">}</span>
-<span class="p">}</span>
-<span class="c1">#headers = {</span>
-<span class="c1">#	"content-type": "application/json",</span>
-<span class="c1">#	"X-RapidAPI-Key": "068e8e71ccmsh9b3b0cf234e3d0dp15d891jsn4e9a94382eba",</span>
-<span class="c1">#	"X-RapidAPI-Host": "jspell-checker.p.rapidapi.com"</span>
-<span class="c1">#}</span>
-
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"7b146afe20msh92e84c02ae27c6ap1185b5jsnb7a574f24cbe"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"068e8e71ccmsh9b3b0cf234e3d0dp15d891jsn4e9a94382eba"</span><span class="p">,</span>
 	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"dnaber-languagetool.p.rapidapi.com"</span>
 <span class="p">}</span>
 
-<span class="c1">#response = requests.request("POST", url, json=payload, headers=headers)</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
-<span class="c1">#print(response.text)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Languages Supported"</span><span class="p">)</span>
-<span class="n">languagelist</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-
-<span class="k">for</span> <span class="n">language</span> <span class="ow">in</span> <span class="n">languagelist</span><span class="p">:</span>
-	<span class="nb">print</span><span class="p">(</span><span class="n">language</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="s2">" = "</span><span class="p">,</span> <span class="n">language</span><span class="p">[</span><span class="s2">"code"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -193,74 +164,136 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Languages Supported
-Arabic  =  ar
-Asturian  =  ast
-Belarusian  =  be
-Breton  =  br
-Catalan  =  ca
-Catalan (Valencian)  =  ca
-Chinese  =  zh
-Danish  =  da
-Dutch  =  nl
-Dutch  =  nl
-Dutch (Belgium)  =  nl
-English  =  en
-English  =  en
-English (Australian)  =  en
-English (Australian)  =  en
-English (Canadian)  =  en
-English (Canadian)  =  en
-English (GB)  =  en
-English (GB)  =  en
-English (New Zealand)  =  en
-English (New Zealand)  =  en
-English (South African)  =  en
-English (South African)  =  en
-English (US)  =  en
-English (US)  =  en
-Esperanto  =  eo
-French  =  fr
-French  =  fr
-Galician  =  gl
-German  =  de
-German  =  de
-German (Austria)  =  de
-German (Austria)  =  de
-German (Germany)  =  de
-German (Germany)  =  de
-German (Swiss)  =  de
-German (Swiss)  =  de
-Greek  =  el
-Irish  =  ga
-Italian  =  it
-Japanese  =  ja
-Khmer  =  km
-Norwegian (Bokmål)  =  nb
-Norwegian (Bokmål)  =  no
-Persian  =  fa
-Polish  =  pl
-Portuguese  =  pt
-Portuguese (Angola preAO)  =  pt
-Portuguese (Angola preAO)  =  pt
-Portuguese (Brazil)  =  pt
-Portuguese (Brazil)  =  pt
-Portuguese (Moçambique preAO)  =  pt
-Portuguese (Moçambique preAO)  =  pt
-Portuguese (Portugal)  =  pt
-Portuguese (Portugal)  =  pt
-Romanian  =  ro
-Russian  =  ru
-Simple German  =  de-DE-x-simple-language
-Slovak  =  sk
-Slovenian  =  sl
-Spanish  =  es
-Spanish  =  es
-Spanish (voseo)  =  es
-Swedish  =  sv
-Tagalog  =  tl
-Tamil  =  ta
-Ukrainian  =  uk
+<pre>[{"name":"Arabic","code":"ar","longCode":"ar"},{"name":"Asturian","code":"ast","longCode":"ast-ES"},{"name":"Belarusian","code":"be","longCode":"be-BY"},{"name":"Breton","code":"br","longCode":"br-FR"},{"name":"Catalan","code":"ca","longCode":"ca-ES"},{"name":"Catalan (Valencian)","code":"ca","longCode":"ca-ES-valencia"},{"name":"Chinese","code":"zh","longCode":"zh-CN"},{"name":"Danish","code":"da","longCode":"da-DK"},{"name":"Dutch","code":"nl","longCode":"nl"},{"name":"Dutch","code":"nl","longCode":"nl"},{"name":"Dutch (Belgium)","code":"nl","longCode":"nl-BE"},{"name":"English","code":"en","longCode":"en"},{"name":"English","code":"en","longCode":"en"},{"name":"English (Australian)","code":"en","longCode":"en-AU"},{"name":"English (Australian)","code":"en","longCode":"en-AU"},{"name":"English (Canadian)","code":"en","longCode":"en-CA"},{"name":"English (Canadian)","code":"en","longCode":"en-CA"},{"name":"English (GB)","code":"en","longCode":"en-GB"},{"name":"English (GB)","code":"en","longCode":"en-GB"},{"name":"English (New Zealand)","code":"en","longCode":"en-NZ"},{"name":"English (New Zealand)","code":"en","longCode":"en-NZ"},{"name":"English (South African)","code":"en","longCode":"en-ZA"},{"name":"English (South African)","code":"en","longCode":"en-ZA"},{"name":"English (US)","code":"en","longCode":"en-US"},{"name":"English (US)","code":"en","longCode":"en-US"},{"name":"Esperanto","code":"eo","longCode":"eo"},{"name":"French","code":"fr","longCode":"fr"},{"name":"French","code":"fr","longCode":"fr"},{"name":"Galician","code":"gl","longCode":"gl-ES"},{"name":"German","code":"de","longCode":"de"},{"name":"German","code":"de","longCode":"de"},{"name":"German (Austria)","code":"de","longCode":"de-AT"},{"name":"German (Austria)","code":"de","longCode":"de-AT"},{"name":"German (Germany)","code":"de","longCode":"de-DE"},{"name":"German (Germany)","code":"de","longCode":"de-DE"},{"name":"German (Swiss)","code":"de","longCode":"de-CH"},{"name":"German (Swiss)","code":"de","longCode":"de-CH"},{"name":"Greek","code":"el","longCode":"el-GR"},{"name":"Irish","code":"ga","longCode":"ga-IE"},{"name":"Italian","code":"it","longCode":"it"},{"name":"Japanese","code":"ja","longCode":"ja-JP"},{"name":"Khmer","code":"km","longCode":"km-KH"},{"name":"Norwegian (Bokmål)","code":"nb","longCode":"nb"},{"name":"Norwegian (Bokmål)","code":"no","longCode":"no"},{"name":"Persian","code":"fa","longCode":"fa"},{"name":"Polish","code":"pl","longCode":"pl-PL"},{"name":"Portuguese","code":"pt","longCode":"pt"},{"name":"Portuguese (Angola preAO)","code":"pt","longCode":"pt-AO"},{"name":"Portuguese (Angola preAO)","code":"pt","longCode":"pt-AO"},{"name":"Portuguese (Brazil)","code":"pt","longCode":"pt-BR"},{"name":"Portuguese (Brazil)","code":"pt","longCode":"pt-BR"},{"name":"Portuguese (Moçambique preAO)","code":"pt","longCode":"pt-MZ"},{"name":"Portuguese (Moçambique preAO)","code":"pt","longCode":"pt-MZ"},{"name":"Portuguese (Portugal)","code":"pt","longCode":"pt-PT"},{"name":"Portuguese (Portugal)","code":"pt","longCode":"pt-PT"},{"name":"Romanian","code":"ro","longCode":"ro-RO"},{"name":"Russian","code":"ru","longCode":"ru-RU"},{"name":"Simple German","code":"de-DE-x-simple-language","longCode":"de-DE-x-simple-language"},{"name":"Slovak","code":"sk","longCode":"sk-SK"},{"name":"Slovenian","code":"sl","longCode":"sl-SI"},{"name":"Spanish","code":"es","longCode":"es"},{"name":"Spanish","code":"es","longCode":"es"},{"name":"Spanish (voseo)","code":"es","longCode":"es-AR"},{"name":"Swedish","code":"sv","longCode":"sv"},{"name":"Tagalog","code":"tl","longCode":"tl-PH"},{"name":"Tamil","code":"ta","longCode":"ta-IN"},{"name":"Ukrainian","code":"uk","longCode":"uk-UA"}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://dnaber-languagetool.p.rapidapi.com/v2/check"</span>
+
+<span class="n">payload</span> <span class="o">=</span> <span class="s2">"language=en-US&amp;text=This</span><span class="si">%20i</span><span class="s2">s</span><span class="si">%20a%20e</span><span class="s2">rror."</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"content-type"</span><span class="p">:</span> <span class="s2">"application/x-www-form-urlencoded"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"068e8e71ccmsh9b3b0cf234e3d0dp15d891jsn4e9a94382eba"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"dnaber-languagetool.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter the text you would like checked"</span><span class="p">)</span>
+
+<span class="n">payload</span> <span class="o">+=</span> <span class="n">text</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="c1">#print(response.text)</span>
+
+<span class="c1">#print(json.dumps(response.json(), indent=4))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">"matches"</span><span class="p">],</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[
+    {
+        "message": "Use \u201can\u201d instead of \u2018a\u2019 if the following word starts with a vowel sound, e.g.\u00a0\u2018an article\u2019, \u2018an hour\u2019.",
+        "shortMessage": "Wrong article",
+        "replacements": [
+            {
+                "value": "an"
+            }
+        ],
+        "offset": 8,
+        "length": 1,
+        "context": {
+            "text": "This is a error.hello 67uh8i",
+            "offset": 8,
+            "length": 1
+        },
+        "sentence": "This is a error.hello 67uh8i",
+        "type": {
+            "typeName": "Other"
+        },
+        "rule": {
+            "id": "EN_A_VS_AN",
+            "description": "Use of 'a' vs. 'an'",
+            "issueType": "misspelling",
+            "urls": [
+                {
+                    "value": "https://languagetool.org/insights/post/indefinite-articles/"
+                }
+            ],
+            "category": {
+                "id": "MISC",
+                "name": "Miscellaneous"
+            },
+            "isPremium": false
+        },
+        "ignoreForIncompleteSentence": false,
+        "contextForSureMatch": 1
+    },
+    {
+        "message": "If a new sentence starts here, add a space and start with an uppercase letter.",
+        "shortMessage": "Capitalization",
+        "replacements": [
+            {
+                "value": " Hello"
+            },
+            {
+                "value": " hello"
+            }
+        ],
+        "offset": 16,
+        "length": 5,
+        "context": {
+            "text": "This is a error.hello 67uh8i",
+            "offset": 16,
+            "length": 5
+        },
+        "sentence": "This is a error.hello 67uh8i",
+        "type": {
+            "typeName": "Other"
+        },
+        "rule": {
+            "id": "LC_AFTER_PERIOD",
+            "subId": "1",
+            "sourceFile": "grammar.xml",
+            "description": "Lowercase word after word and no space in between",
+            "issueType": "uncategorized",
+            "category": {
+                "id": "CASING",
+                "name": "Upper/Lowercase"
+            },
+            "isPremium": false
+        },
+        "ignoreForIncompleteSentence": false,
+        "contextForSureMatch": 3
+    }
+]
 </pre>
 </div>
 </div>
