@@ -142,7 +142,9 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://jspell-checker.p.rapidapi.com/check"</span>
+<span class="c1">#url = "https://jspell-checker.p.rapidapi.com/check"</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://dnaber-languagetool.p.rapidapi.com/v2/languages"</span>
 
 <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">"language"</span><span class="p">:</span> <span class="s2">"enUS"</span><span class="p">,</span>
@@ -157,15 +159,28 @@ window.onload = wrap_img;
 		<span class="s2">"ignoreWordsWithNumbers"</span><span class="p">:</span> <span class="kc">True</span>
 	<span class="p">}</span>
 <span class="p">}</span>
+<span class="c1">#headers = {</span>
+<span class="c1">#	"content-type": "application/json",</span>
+<span class="c1">#	"X-RapidAPI-Key": "068e8e71ccmsh9b3b0cf234e3d0dp15d891jsn4e9a94382eba",</span>
+<span class="c1">#	"X-RapidAPI-Host": "jspell-checker.p.rapidapi.com"</span>
+<span class="c1">#}</span>
+
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"content-type"</span><span class="p">:</span> <span class="s2">"application/json"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"068e8e71ccmsh9b3b0cf234e3d0dp15d891jsn4e9a94382eba"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"jspell-checker.p.rapidapi.com"</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"7b146afe20msh92e84c02ae27c6ap1185b5jsnb7a574f24cbe"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"dnaber-languagetool.p.rapidapi.com"</span>
 <span class="p">}</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="c1">#response = requests.request("POST", url, json=payload, headers=headers)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="c1">#print(response.text)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Languages Supported"</span><span class="p">)</span>
+<span class="n">languagelist</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+
+<span class="k">for</span> <span class="n">language</span> <span class="ow">in</span> <span class="n">languagelist</span><span class="p">:</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">language</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="s2">" = "</span><span class="p">,</span> <span class="n">language</span><span class="p">[</span><span class="s2">"code"</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -178,7 +193,74 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{"elements":[{"id":0,"errors":[{"word":"thiss","position":0,"suggestions":["this","thighs","theist","thesis","theists","theism","twits","ethics","thigh","twists"]},{"word":"intresting","position":9,"suggestions":["interesting","entreating","entrusting","uninteresting","intersecting","untrusting","interstice","entireties","interning","interpreting"]}]}],"spellingErrorCount":2}
+<pre>Languages Supported
+Arabic  =  ar
+Asturian  =  ast
+Belarusian  =  be
+Breton  =  br
+Catalan  =  ca
+Catalan (Valencian)  =  ca
+Chinese  =  zh
+Danish  =  da
+Dutch  =  nl
+Dutch  =  nl
+Dutch (Belgium)  =  nl
+English  =  en
+English  =  en
+English (Australian)  =  en
+English (Australian)  =  en
+English (Canadian)  =  en
+English (Canadian)  =  en
+English (GB)  =  en
+English (GB)  =  en
+English (New Zealand)  =  en
+English (New Zealand)  =  en
+English (South African)  =  en
+English (South African)  =  en
+English (US)  =  en
+English (US)  =  en
+Esperanto  =  eo
+French  =  fr
+French  =  fr
+Galician  =  gl
+German  =  de
+German  =  de
+German (Austria)  =  de
+German (Austria)  =  de
+German (Germany)  =  de
+German (Germany)  =  de
+German (Swiss)  =  de
+German (Swiss)  =  de
+Greek  =  el
+Irish  =  ga
+Italian  =  it
+Japanese  =  ja
+Khmer  =  km
+Norwegian (Bokmål)  =  nb
+Norwegian (Bokmål)  =  no
+Persian  =  fa
+Polish  =  pl
+Portuguese  =  pt
+Portuguese (Angola preAO)  =  pt
+Portuguese (Angola preAO)  =  pt
+Portuguese (Brazil)  =  pt
+Portuguese (Brazil)  =  pt
+Portuguese (Moçambique preAO)  =  pt
+Portuguese (Moçambique preAO)  =  pt
+Portuguese (Portugal)  =  pt
+Portuguese (Portugal)  =  pt
+Romanian  =  ro
+Russian  =  ru
+Simple German  =  de-DE-x-simple-language
+Slovak  =  sk
+Slovenian  =  sl
+Spanish  =  es
+Spanish  =  es
+Spanish (voseo)  =  es
+Swedish  =  sv
+Tagalog  =  tl
+Tamil  =  ta
+Ukrainian  =  uk
 </pre>
 </div>
 </div>
