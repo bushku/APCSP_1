@@ -24,10 +24,7 @@ Question 44 is my favorite question in the exam because it involves modular arit
 
 That was a "values of variables after arithmetic operations" type of question. That question reminds me of doing plug and chug in the problems I did in Algebra class.
 
-The binary numbers questions have stood me out because I took notes on Binary Numbers on AP classroom.
 
 ## Night at the Museum Reflection
  When I saw other groups' projects, they were running games. The games were my favorite projects I saw because it reminded me of playing video games when I was little. I still play a video game called "Subway Surfers" but only for a little while because I do have to finish work.
 
-## What I Need to Improve On
-I have been working hard, but I still need to work on understanding the steps and concepts. In order to do that, I will blog on the steps and concepts.
