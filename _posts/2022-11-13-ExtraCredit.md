@@ -143,3 +143,5 @@ $ sudo docker-compose build --no-cache
 
 Run docker-compose:
 $ docker-compose up -d
+
+Website should be up by now
