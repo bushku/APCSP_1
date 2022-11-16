@@ -1,11 +1,12 @@
 ---
 title: Binary Math
-layout: default
+layout: post
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary
-image: /images/binary.png
-categories: []
+categories: [3.B, 3.C, C4.4]
 tags: [html, liquid, javascript]
+week: 13
+type: pbl
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
