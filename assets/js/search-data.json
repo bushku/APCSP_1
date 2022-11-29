@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "age = &quot;Timmy&quot; name = &quot;25&quot; print(name + &quot; is &quot; + age) . 25 is Timmy . A variable is an abstraction made inside a program that holds a value. College board uses assignment operator &lt;- In python, the assignment operator is an equal sign .",
+            "content": "age = &quot;Timmy&quot; name = &quot;25&quot; print(name + &quot; is &quot; + age) . 25 is Timmy . A variable is an abstraction made inside a program that holds a value. College board uses assignment operator &lt;- In python, the assignment operator is an equal sign . A variable, x, is initially given a value of 15. Later on, the value for x is changed to 22. If you print x, the command would display 22. .",
             "url": "https://bushku.github.io/APCSP_1/2022/11/28/variables.html",
             "relUrl": "/2022/11/28/variables.html",
             "date": " • Nov 28, 2022"
