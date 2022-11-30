@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Title",
-            "content": "age = &quot;Timmy&quot; name = &quot;25&quot; print(name + &quot; is &quot; + age) . 25 is Timmy . A variable is an abstraction made inside a program that holds a value. College board uses assignment operator &lt;- In python, the assignment operator is an equal sign . A variable, x, is initially given a value of 15. Later on, the value for x is changed to 22. If you print x, the command would display 22. .",
+            "content": "age = &quot;18&quot; name = &quot;Shruthi&quot; print(name + &quot; is &quot; + age) . Shruthi is 18 . The assignment operator is different for different types of coding languages. A variable will take the most recent value assigned. A variable is an abstraction made inside a program that holds a value. College board uses assignment operator &lt;- In python, the assignment operator is an equal sign. A variable, x, is initially given a value of 15. Later on, the value for x is changed to 22. If you print x, the command would display 22. . &lt;/p&gt; Prev Next &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; .",
             "url": "https://bushku.github.io/APCSP_1/2022/11/28/variables.html",
             "relUrl": "/2022/11/28/variables.html",
             "date": " • Nov 28, 2022"
