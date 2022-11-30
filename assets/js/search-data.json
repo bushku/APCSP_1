@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "3.3-3.4 Hacks",
-            "content": "Hack 1 . All the numbers are sequencing | 3 &amp; 4 are selection | 2 &amp; 4 are iteration | . Hack 2 . num1 = 5 num2 = num1 * 3 = 5(3) = 15 num3 = num2 / num1 * (9 % 2) * 4 = 3 * 1 * 4 = 12 result = (num3 % num1 + num2) % num3 * 3 / 5 = (12 % 5 + 15) % 12 * 3/5 = 17 % 12 * 3/5 = 3 . 1 down - iteration 2 down - selection 3 across - sequence . Hack 3 . . Prev Next",
+            "content": "Hack 1 . Sequence: a list of steps selection: selecting a string/number iteration: doing a loop over again until condition is met . All the numbers are sequencing | 3 &amp; 4 are selection | 2 &amp; 4 are iteration | . Hack 2 . num1 = 5 num2 = num1 * 3 = 5(3) = 15 num3 = num2 / num1 * (9 % 2) * 4 = 3 * 1 * 4 = 12 result = (num3 % num1 + num2) % num3 * 3 / 5 = (12 % 5 + 15) % 12 * 3/5 = 17 % 12 * 3/5 = 3 . 1 down - iteration 2 down - selection 3 across - sequence . Hack 3 . .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2022/11/29/3.3-3.4Hacks.html",
             "relUrl": "/apcsp/2022/11/29/3.3-3.4Hacks.html",
             "date": " • Nov 29, 2022"
