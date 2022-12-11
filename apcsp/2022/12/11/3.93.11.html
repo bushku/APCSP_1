@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -218,7 +218,41 @@ It is important to know that algorithms that look the same might have different 
 <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"You guessed the number in </span><span class="si">{</span><span class="n">num_guesses</span><span class="si">}</span><span class="s"> guesses!"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p><img src="/APCSP_1/images/Flowcart%201.png" alt="Flowcart 1.png" title="https://github.com/bushku/APCSP_1"></p>
+<p><img src="/APCSP_1/images/Flowcart%201.png" alt="Flowcart 1.png" title="https://github.com/bushku/APCSP_1">
+<img src="/APCSP_1/images/Flowcart%202.png" alt="Flowcart 2.png" title="https://github.com/bushku/APCSP_1">
+<img src="/APCSP_1/images/Flowcart%203.png" alt="Flowcart 3.png" title="https://github.com/bushku/APCSP_1">
+<img src="/APCSP_1/images/Flowcart%204.png" alt="Flowcart 4.png" title="https://github.com/bushku/APCSP_1"></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">One</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">99</span><span class="p">]</span>
+<span class="n">Two</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">Three</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span>
+<span class="n">Lists</span> <span class="o">=</span> <span class="p">[</span><span class="n">One</span><span class="p">,</span> <span class="n">Two</span><span class="p">,</span> <span class="n">Three</span><span class="p">]</span>
+<span class="c1"># loops through the range of the length of lists
+</span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Lists</span><span class="p">)):</span>
+    <span class="c1">#sorts the list in order
+</span>    <span class="n">Lists</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">sort</span><span class="p">()</span>
+    <span class="c1">#takes the middle index 
+</span>    <span class="n">middleindex</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Lists</span><span class="p">[</span><span class="n">x</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1">#outputs
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"Middle Index of List #"</span><span class="p">,</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s">"is"</span><span class="p">,</span><span class="n">Lists</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">middleindex</span><span class="p">])</span>
+</code></pre></div></div>
+<p>Middle Index of List # 1 is 57
+Middle Index of List # 2 is 43
+Middle Index of List # 3 is 60</p>
+
+<p>Set 1: 80, Set 2: 74, Set 3: 96</p>
+
+<p>Which of the following lists can NOT a binary search be used in order to find a targeted value?</p>
+
+<p>a. [“amy”, “beverly”, “christian”, “devin”]</p>
+
+<p>b. [-1, 2, 6, 9, 19]</p>
+
+<p>c. [3, 2, 8, 12, 99]</p>
+
+<p>d. [“xylophone”, “snowman”, “snake”, “doorbell”, “author”]</p>
+
+<p>c is out of order so therefore it is c</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
