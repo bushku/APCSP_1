@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -245,6 +245,57 @@ Output Parameters: parameters passed to get an output of a function/procedure</p
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">InchestoFeet</span><span class="p">(</span><span class="n">inches</span><span class="p">):</span>
+    <span class="n">Feet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Feet</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">inches</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Feet</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">InchestoFeet</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-12-fc7af389b46a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     Feet <span class="ansi-blue-fg">=</span> sqrt<span class="ansi-blue-fg">(</span>inches<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">return</span> Feet
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>result <span class="ansi-blue-fg">=</span> InchestoFeet<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">144</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> print<span class="ansi-blue-fg">(</span>result<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-12-fc7af389b46a&gt;</span> in <span class="ansi-cyan-fg">InchestoFeet</span><span class="ansi-blue-fg">(inches)</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">def</span> InchestoFeet<span class="ansi-blue-fg">(</span>inches<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     Feet <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">0</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg">     </span>Feet <span class="ansi-blue-fg">=</span> sqrt<span class="ansi-blue-fg">(</span>inches<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">return</span> Feet
+<span class="ansi-green-intense-fg ansi-bold">      5</span> result <span class="ansi-blue-fg">=</span> InchestoFeet<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">144</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;sqrt&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
