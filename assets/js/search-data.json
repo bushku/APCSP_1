@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "import random status = &quot;in&quot; while status != &quot;out&quot;: chooseCorner = input(&quot;What corner do you choose?&quot;) corner = random.randint(1,4) if int(chooseCorner) == corner: status = &quot;out&quot; print(&quot;You chose corner number &quot; + chooseCorner + &quot; and you&#39;re OUT&quot;) else: print(&quot;You chose corner number &quot; + chooseCorner + &quot; and are still in!&quot;) . Simulation idea: musical chairs The game musical chairs goes like this: Chairs are set up .",
+            "content": "import random status = &quot;in&quot; while status != &quot;out&quot;: chooseCorner = input(&quot;What corner do you choose?&quot;) corner = random.randint(1,4) if int(chooseCorner) == corner: status = &quot;out&quot; print(&quot;You chose corner number &quot; + chooseCorner + &quot; and you&#39;re OUT&quot;) else: print(&quot;You chose corner number &quot; + chooseCorner + &quot; and are still in!&quot;) . Hack 1 . Simulation idea: musical chairs . The game musical chairs goes like this: Chairs are set up .",
             "url": "https://bushku.github.io/APCSP_1/2022/12/13/simulations.html",
             "relUrl": "/2022/12/13/simulations.html",
             "date": " • Dec 13, 2022"
