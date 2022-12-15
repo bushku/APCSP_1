@@ -140,67 +140,9 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This creates a function called inefficientWay with a parameter called number.</span>
-<span class="k">def</span> <span class="nf">inefficientWay</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
- <span class="c1"># Then it loops over the numbers</span>
- <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
-   <span class="c1"># Now it finds the minimum number in the unsorted part of the list</span>
-   <span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
-   <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
-     <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
-       <span class="n">min_index</span> <span class="o">=</span> <span class="n">j</span>
-   <span class="c1"># Then it swaps the minimum number with the first unsorted number</span>
-   <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
- <span class="c1"># return the sorted list</span>
- <span class="k">return</span> <span class="n">numbers</span>
- 
-<span class="c1"># test the algorithm</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inefficientWay</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># should print [1, 2, 3, 4, 5]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 2, 3, 4, 5]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">efficient_sort</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
- <span class="c1"># loop over the numbers</span>
- <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
-   <span class="c1"># find the minimum number in the unsorted part of the list</span>
-   <span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
-   <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
-     <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
-       <span class="n">min_index</span> <span class="o">=</span> <span class="n">j</span>
-   <span class="c1"># swap the minimum number with the first unsorted number</span>
-   <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
- <span class="c1"># return the sorted list</span>
- <span class="k">return</span> <span class="n">numbers</span>
- 
-<span class="c1"># test the algorithm</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">efficient_sort</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># should print [1, 2, 3, 4, 5]</span>
+<div class=" highlight hl-ipython3"><pre><span></span> <span class="o">-</span> <span class="n">Collatz</span><span class="p">:</span> <span class="n">A</span> <span class="n">conjecture</span> <span class="n">that</span> <span class="n">asks</span> <span class="n">whether</span> <span class="n">repeating</span> <span class="n">two</span> <span class="n">simple</span> <span class="n">arithmetic</span> <span class="n">operations</span> <span class="n">will</span> <span class="n">eventually</span> <span class="n">transform</span> <span class="n">every</span> <span class="n">positive</span> <span class="n">integer</span> <span class="n">into</span> <span class="mf">1.</span>
+ <span class="o">-</span> <span class="n">Hailstone</span> <span class="n">numbers</span><span class="p">:</span> <span class="n">A</span> <span class="n">squence</span> <span class="n">of</span> <span class="n">integers</span> <span class="n">generated</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Collatz</span> <span class="n">conjecture</span><span class="o">.</span>
+ <span class="o">-</span> <span class="n">Undecidable</span> <span class="n">problems</span><span class="p">:</span> <span class="n">one</span> <span class="n">that</span> <span class="n">should</span> <span class="n">give</span> <span class="s2">&quot;yes&quot;</span>
 </pre></div>
 
     </div>
