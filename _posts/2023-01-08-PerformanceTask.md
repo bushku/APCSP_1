@@ -22,11 +22,11 @@ I am surprised that college board score the CPT at 4/6 instead of 6/6. On the Pr
 ## Submission 2
 | Reporting Category     | Student Score    | College Board Score  |
 |----------------------- | ---------------- | -------------------- | 
-| Program Function and Purpose  | 0 | 1 | 
-| Data Abstraction | 1 | 1 |
-| Managing Complexity | 1 | 1 |
-| Procedural Abstraction | 1 | 1 |
-| Algorithm Implementation | 1 | 1 |
-| Testing | 1 | 1 |
+|Program Function and Purpose| 0            | 1                    | 
+| Data Abstraction       | 1                | 1                    |
+| Managing Complexity    | 1                | 1                    |
+| Procedural Abstraction | 1                | 1                    |
+|Algorithm Implementation| 1                | 1                    |
+| Testing                | 1                | 1                    |
 ## Reflection 2
 I scored the Program Function and Purpose category as 0/1 instead of 1/1 because I thought the program in the video did not include any inputs. It turns out that college board scored the category as 1/1 because 
