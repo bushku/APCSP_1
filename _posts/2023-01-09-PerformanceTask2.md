@@ -19,6 +19,7 @@ title:  Create Performance Task 2
 | Testing | 1 | 1 |   
 
 ## Submission 2
+
 | Category     | Student Score | College Board Score |
 |--------- | ----------- | --------- | 
 | Program Function and Purpose |  |  |  
@@ -29,6 +30,7 @@ title:  Create Performance Task 2
 | Testing |  |  |   
 
 ## Submission 3
+
 | Category     | Student Score | College Board Score | 
 |--------- | ----------- | --------- | 
 | Program Function and Purpose |  |  |  
@@ -39,6 +41,7 @@ title:  Create Performance Task 2
 | Testing |  |  |   
 
 ## Submission 4
+
 | Category     | Student Score | College Board Score |
 |--------- | ----------- | --------- | 
 | Program Function and Purpose |  |  | 
