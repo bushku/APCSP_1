@@ -9,5 +9,8 @@ title:  Create Performance Task 2
 | Category     | Student Score | College Board Score | Comments |
 |--------- | ----------- | --------- | ----------- |
 | Program Function and Purpose |  |  |  |
-| 1 |  | |  |
-| 2 |  | |   |
+| Data Abstraction |  | |  |
+| Managing Complexity |  | |   |
+| Procedural Abstraction |  | |  |
+| Algorithm Implementation | | | |
+| Testing |  |   |   |
