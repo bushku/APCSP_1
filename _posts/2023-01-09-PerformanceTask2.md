@@ -8,6 +8,17 @@ title:  Create Performance Task 2
 ---
 
 ## Submission 1
+
+| Category     | Student Score    | College Board Score |
+|--------- | ----------- | ---------- |
+| Program Function and Purpose | 0 | 0 |
+|1||
+|2||
+| | |
+| | |
+| | |
+
+
 | Category     | Student Score | College Board Score | 
 |--------- | ----------- | --------- | 
 | Program Function and Purpose | 0 | 0 | 
