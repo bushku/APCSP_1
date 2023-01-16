@@ -49,9 +49,11 @@ Reflection: There are no discrepancies in my scoring versus the ap scoring. My p
 
 | Category     | Student Score | College Board Score |
 |--------- | ----------- | --------- | 
-| Program Function and Purpose |  |  | 
-| Data Abstraction |  |  | 
-| Managing Complexity |  |  | 
-| Procedural Abstraction |  |  |  
-| Algorithm Implementation |  |  | 
-| Testing |  |  |   
+| Program Function and Purpose | 1 | 1 | 
+| Data Abstraction | 0 | 0 | 
+| Managing Complexity | 1 | 0 | 
+| Procedural Abstraction | 1 | 1 |  
+| Algorithm Implementation | 1 | 1 | 
+| Testing | 0 | 0 |   
+
+Reflection: There was one discrepancy in the scoring. The discrepancy was in the managing complexity. I thought the student described how the list managed complexity. It turns out that the student did not explain how the list managed complexity. The irrelavant part of the response is that The response refers to the list wordList, which is not identified. My program will need to manage complexity. The submission may have failed to meet the standard because it was missing some of the requirements in some of the categories.
