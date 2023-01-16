@@ -36,12 +36,14 @@ Reflection: There are no discrepancies in my scoring versus the ap scoring. My p
 
 | Category     | Student Score | College Board Score | 
 |--------- | ----------- | --------- | 
-| Program Function and Purpose |  |  |  
-| Data Abstraction |  |  |  
-| Managing Complexity |  |  |   
-| Procedural Abstraction |  |  |  
-| Algorithm Implementation |  |  | 
-| Testing |  |  |   
+| Program Function and Purpose | 0 | 0 |  
+| Data Abstraction | 1 | 1 |  
+| Managing Complexity | 1 | 1 |   
+| Procedural Abstraction | 1 | 1 |  
+| Algorithm Implementation | 1 | 1 | 
+| Testing | 1 | 1 |   
+
+Reflection: There are no discrepancies in my scoring versus the ap scoring. My program will need a lot of data abstraction and managing complexity. The submission might have failed to meet the standard because the CPT fullfilled all the requirements except describing the purpose of the program. 
 
 ## Submission 4
 
