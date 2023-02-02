@@ -142,6 +142,34 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">const</span> <span class="n">BMIList</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;BMIList&quot;</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">BMIValue</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;BMIValue&quot;</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">addBMIButton</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;addBMIButton&quot;</span><span class="p">);</span>
+
+<span class="n">addBMIButton</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">const</span> <span class="n">bmi</span> <span class="o">=</span> <span class="n">BMIValue</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+  <span class="n">const</span> <span class="n">newRow</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
+  <span class="n">const</span> <span class="n">newBMI</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+  <span class="n">newBMI</span><span class="o">.</span><span class="n">innerText</span> <span class="o">=</span> <span class="n">bmi</span><span class="p">;</span>
+  <span class="n">newRow</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">newBMI</span><span class="p">);</span>
+  <span class="n">BMIList</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">newRow</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "CPT Project Notes",
-            "content": "BMI . . . Add BMI",
+            "content": "BMI . . . Add BMI const BMIList = document.getElementById(&quot;BMIList&quot;); const BMIValue = document.getElementById(&quot;BMIValue&quot;); const addBMIButton = document.getElementById(&quot;addBMIButton&quot;); addBMIButton.addEventListener(&quot;click&quot;, function() { const bmi = BMIValue.value; const newRow = document.createElement(&quot;tr&quot;); const newBMI = document.createElement(&quot;td&quot;); newBMI.innerText = bmi; newRow.appendChild(newBMI); BMIList.appendChild(newRow); }); .",
             "url": "https://bushku.github.io/APCSP_1/2023/02/02/projectplan.html",
             "relUrl": "/2023/02/02/projectplan.html",
             "date": " • Feb 2, 2023"
