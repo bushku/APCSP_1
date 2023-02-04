@@ -113,6 +113,33 @@ window.onload = wrap_img;
   <li>My group did something similar with jokes about merchendise</li>
 </ul>
 
+<table id="BMITable">
+  <thead>
+    <tr>
+      <th>BMI</th>
+    </tr>
+  </thead>
+  <tbody id="BMIList">
+  </tbody>
+</table>
+<p><br>
+<input type="text" id="BMIValue">
+<button id="addBMIButton">Add BMI</button>
+<script>
+const BMIList = document.getElementById("BMIList");
+const BMIValue = document.getElementById("BMIValue");
+const addBMIButton = document.getElementById("addBMIButton");</script></p>
+
+<p>addBMIButton.addEventListener(“click”, function() {
+  const bmi = BMIValue.value;
+  const newRow = document.createElement(“tr”);
+  const newBMI = document.createElement(“td”);
+  newBMI.innerText = bmi;
+  newRow.appendChild(newBMI);
+  BMIList.appendChild(newRow);
+});
+&lt;/script&gt;</p>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="bushku/APCSP_1"

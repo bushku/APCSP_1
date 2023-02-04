@@ -267,7 +267,7 @@
     
         ,"post24": {
             "title": "Project Videos",
-            "content": "Emma’s Group . Used a lot of keys/values | Used algorithms | My group could learn a lot from the video using keys/values and algorithms while listing the merchendise items | . Team Berries . Made a table using API | My group did something similar with jokes about merchendise | .",
+            "content": "Emma’s Group . Used a lot of keys/values | Used algorithms | My group could learn a lot from the video using keys/values and algorithms while listing the merchendise items | . Team Berries . Made a table using API | My group did something similar with jokes about merchendise | . BMI . Add BMI . addBMIButton.addEventListener(“click”, function() { const bmi = BMIValue.value; const newRow = document.createElement(“tr”); const newBMI = document.createElement(“td”); newBMI.innerText = bmi; newRow.appendChild(newBMI); BMIList.appendChild(newRow); }); &lt;/script&gt; .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2022/10/25/ProjectVideo.html",
             "relUrl": "/apcsp/2022/10/25/ProjectVideo.html",
             "date": " • Oct 25, 2022"
