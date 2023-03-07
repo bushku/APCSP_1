@@ -13,6 +13,17 @@
   
     
         ,"post1": {
+            "title": "2.2 Notes",
+            "content": ".",
+            "url": "https://bushku.github.io/APCSP_1/apcsp/2023/03/06/Unit2.2.html",
+            "relUrl": "/apcsp/2023/03/06/Unit2.2.html",
+            "date": " • Mar 6, 2023"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "5.6 Notes - Safe Computing",
             "content": "Digital rights: terms and conditions are part of them . Safe computing: cookies being stolen, stolen fishing attacks . Hacks . The most common PII are our names, github usernames, and information that we put in our projects (such as nutrition, BMI, and workouts). | I am usually nervous sending my own information out, especially to social media. I feel that social media is bad for my brain because I am afraid of texting on social media. I feel that I am texting a stranger. | Good passwords: An English uppercase character (A-Z) | An English lowercase character (a-z) | A number (0-9) and/or symbol (such as !, #, or %) | Ten or more characters total Bad passwords: | 123456 | 123456789 | Qwerty | Password | 12345 | 12345678 | 111111 | 1234567 Authentication steps: | The user attempts to access an application. | The user is redirected to the IdP to receive a verification code | The user gives consent for the application to access information from the idP | The user submits the verification code to the application | . | Symmetric encryption: a private key is used to encrypt and decrypt an encrypted email Asymmetric encryption: the public key of the recipient is used to encrypt the message | Encryption we used in AWS deployment - Asymmetric encryption We had to generate the public and secret keys and then add them to our repositories. | Last trimester right before night at the muesuem, I tried to make some last-minute changes to our project because I was really nervous. But then the team had a lot of problems. We could not access our own flask website. The error is related to the debug I made. I made this error happen, meaning I made those last-minute changes to or project. One of the twins (Ava or Alexa) told me that if I want to make any changes to our project, I have to ask the team first. In the upcoming night at the muesuem, I am going to stay calm and do my best to show a lot of people what we got in our project. |",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/02/08/5.6.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "5.5 Notes - Legal and Ethnical Concerns",
             "content": "License Types . Creative Commons Zero: waives copyright interest in a work created and it is dedicated to the world-wide public domain | Open Source MIT License: the author of software with MIT license wants credit | Open Source GPL License: the license lets people do whatever they want with their project, except distributing closed-source versions | . Legal and Ethnic Concerns . creative commons: open-sourced code lets us to learn a lot for free | Digital Rights Management = downloading music, movies, and other content from illegal websites that have bybassed the systems | Digital Rights Management is often violated | The type of license I like best is the open source GPL license | . Software License I picked: GNU General Public License v3.0 Reason I picked license: the GNU General Public License is intended to guarantee my freedom to share and change all versions of a program to make sure it remains free software for all its users. The blog about my team license (frontend/backend) are linked in the review ticket. .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/02/08/5.5.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "CPT Project Review Guide",
             "content": "Overview . My feature is the BMI calculator. A solution to solving an unhealthy lifestyle is finding ways to regulate your body mass. To do this, you need to first find your body mass index. This problem is solved with our BMI Calculator, which will tell you, based on the input of your height weight, whether you are underweight, normal weight, or overweight for your index. . Program Function and Purpose . purpose: to solve obesity and being underweight functionality: calculate body mass index input: both weight and height of person output: BMI and tips on how to get BMI normalized . Data Abstraction . Add a button called “add BMI” that will add to a list called BMIs and can be displayed on the table. This is incorporated to lists. . Managing Complexity . For the managing complexity category, I have to use functions to code everything and important code is put inside primary functions. . Procedural Abstraction . Use a procedure to calculate BMIs. . Algorithm and Implementation . using sequencing to calculate BMI based on users’ inputs . Testing . your own weight and height would be more than enough to test it fairly. .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/02/05/cpt.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "CPT Project Notes",
             "content": "BMI . . . Add BMI .",
             "url": "https://bushku.github.io/APCSP_1/2023/02/02/projectplan.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "5.4 Crowdsourcing",
             "content": "Crowdsourcing is the practice of obtaining services, ideas, or content by enlisting the services of a large number of people, either paid or unpaid, typically via the internet. It involves outsourcing tasks to a large, undefined group of people, rather than to a specific individual or organization. Crowdsourcing is used in a variety of fields, including marketing, design, product development, and problem-solving, to tap into the collective intelligence and expertise of the crowd. The goal of crowdsourcing is to harness the power of many people to accomplish tasks that would be difficult or impossible for an individual or small group to complete. . Obtaining Data via Crowdsourcing . Crowdsourcing is the practice of gathering information or services from a large group of people, often via the internet, for a specific purpose. It enables organizations to quickly and cost-effectively gather large amounts of data. . Advantages of Crowdsourcing . Large and diverse pool of contributors | Can be cost-effective compared to traditional data collection methods | Allows for real-time data collection | Can reach hard-to-access populations or locations | . Disadvantages of Crowdsourcing: . Quality control issues, as data may not be validated | Bias in responses, as individuals may have their own biases | Lack of incentive for contributors to provide accurate data | . Popular platforms for Crowdsourcing data . Amazon Mechanical Turk | CrowdFlower | Upwork | . Evidence of Crowdsourcing . Crowdsourcing refers to the act of obtaining services or ideas from a large group of people, especially from the online community. There is a lot of evidence to support the use of crowdsourcing as a way to obtain valuable input and resources from a diverse group of individuals. Some of the most common types of evidence for crowdsourcing include: . Increased Innovation: Crowdsourcing often results in a large number of ideas being generated, many of which may be outside the box and not considered by traditional methods. This leads to increased innovation. . | Cost Savings: Crowdsourcing can often be less expensive than traditional methods of gathering information or ideas. This is because the costs are spread among a large number of individuals, rather than being borne by a single entity. . | *Increased Speed: Crowdsourcing can often be faster than traditional methods of gathering information or ideas. This is because the process can be done in parallel, with many individuals working on different aspects of the problem at the same time. . | Improved Quality:* Crowdsourcing can result in improved quality, as a large number of individuals can review and provide feedback on the ideas generated. This leads to a more robust and well-vetted solution. . | Wider Reach: Crowdsourcing enables organizations to reach a wider audience than they would be able to through traditional methods. This can result in a more diverse set of ideas and perspectives being gathered. . | .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/02/01/5.4.html",
@@ -67,23 +78,12 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "5.3 Tech Bias",
             "content": "What age groups use Facebook” vs “… TikTok”? . Facebook 21-70 . TikTok 7-21 . Older people tend to use facebook because it was the TikTok of their generation and it’s marketed towards an older audience while TikTok is marketed towards an younger audience. Facebook also offers a simple interface while tiktok can be harder to navigate at times and while as of recently tik tok is able to share photos its main use is sharing videos unlike facebook. . Why do virtual assistants have female voices? . Females tend to have more soothing and almost entrancing voices which makes for more soothing and enjoyable products. . Talk about an algorithm that influences your decisions, think about these companies (ie FAANG - Facebook, Amazon, Apple,Netflix, Google) . Products are made to record your past decisions and choices whether that be a movie you watched or a thing you searched for and the give you future suggestions braces of the recorded information. This is helpful but is actually implemented to make you stay on the website or app for a longer period of time and if engineered in the correct way has the potential to be harmful. . Come up with some thoughts on the video . Although he acts almost offended, the video seems to be made in a good nature and a joking manner, so no, he does not believe the product was made to purposefully discriminate. I believe this happened due to non intentional testing limitations and design flaws. Although accidental, the product could potentially be harmful by advertising as a “human face tracker” and not considering a darker skin tone as a human face. .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/02/01/5.3.html",
             "relUrl": "/apcsp/2023/02/01/5.3.html",
             "date": " • Feb 1, 2023"
-        }
-        
-    
-  
-    
-        ,"post7": {
-            "title": "MCQ 2 Corrections",
-            "content": ". . Question 9: I got Step 3 right but I did not get Step 4 right. Since a list of numbers has n elements, indexed from 1 to n, the position has to be greater than n. . . Question 16: I thought I picked “selection” but it turned out that I selected “searching”. I did not check that question properly. . . Question 27: The question is a robot question. I was confused on that one. I answered B and the correct answer was D. The reason B is wrong is because after “Repeat 3 times”, there were two seperate codes before n &lt;- n + 1. I think I got this wrong because I was reading it a little fast and B just “seemed” right but I didn’t pay too much attention. . . Question 30: I was asked to draw an image on a graph in two different ways. The reason A is incorrect is because it dras the circle before it changes the y value. This equation ould have made every circle one y space lower making it not match the graph. My thinking was that it didn’t start drawing the circle from the center rather the bottom. .",
-            "url": "https://bushku.github.io/APCSP_1/apcsp/2023/01/30/collegeboard.html",
-            "relUrl": "/apcsp/2023/01/30/collegeboard.html",
-            "date": " • Jan 30, 2023"
         }
         
     
