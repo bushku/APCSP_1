@@ -865,11 +865,8 @@ None
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Name'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Shruthi'</span><span class="p">,</span> <span class="s1">'Finn'</span><span class="p">,</span> <span class="s1">'James'</span><span class="p">,</span> <span class="s1">'Paaras'</span><span class="p">,</span> <span class="s1">'Jake'</span><span class="p">,</span> <span class="s1">'Mort'</span><span class="p">,</span> <span class="s1">'Aneesh'</span><span class="p">,</span> <span class="s1">'Mom'</span><span class="p">,</span> <span class="s1">'Dad'</span><span class="p">,</span> <span class="s1">'Yeung'</span><span class="p">],</span>
-        <span class="s1">'Age'</span><span class="p">:</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">55</span><span class="p">]}</span>
-  
-<span class="c1"># Create DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/bmi.json'</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -883,17 +880,10 @@ None
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>      Name  Age
-0  Shruthi   18
-1     Finn   16
-2    James   17
-3   Paaras   16
-4     Jake   17
-5     Mort   58
-6   Aneesh   20
-7      Mom   58
-8      Dad   60
-9    Yeung   55
+<pre>      Name  Weight  Height   bmi
+0  Shruthi     100      60  19.3
+1     Ahad     140      60  27.3
+2   Joshua     150      60  29.2
 </pre>
 </div>
 </div>
@@ -911,12 +901,12 @@ None
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Age'</span><span class="p">]])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'bmi'</span><span class="p">]])</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1">#try two columns and remove the index from print statement</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span><span class="s1">'Age'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span><span class="s1">'Weight'</span><span class="p">,</span><span class="s1">'Height'</span><span class="p">,</span><span class="s1">'bmi'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -929,29 +919,15 @@ None
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>   Age
-0   18
-1   16
-2   17
-3   16
-4   17
-5   58
-6   20
-7   58
-8   60
-9   55
+<pre>    bmi
+0  19.3
+1  27.3
+2  29.2
 
-   Name  Age
-Shruthi   18
-   Finn   16
-  James   17
- Paaras   16
-   Jake   17
-   Mort   58
- Aneesh   20
-    Mom   58
-    Dad   60
-  Yeung   55
+   Name  Weight  Height  bmi
+Shruthi     100      60 19.3
+   Ahad     140      60 27.3
+ Joshua     150      60 29.2
 </pre>
 </div>
 </div>
@@ -969,9 +945,9 @@ Shruthi   18
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Age</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Age</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">bmi</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">bmi</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Age</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Age</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">bmi</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">bmi</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
 </pre></div>
 
     </div>
@@ -984,12 +960,11 @@ Shruthi   18
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>  Name  Age
-8  Dad   60
+<pre>     Name  Weight  Height   bmi
+2  Joshua     150      60  29.2
 
-     Name  Age
-1    Finn   16
-3  Paaras   16
+      Name  Weight  Height   bmi
+0  Shruthi     100      60  19.3
 </pre>
 </div>
 </div>
