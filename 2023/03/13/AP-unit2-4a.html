@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -183,8 +183,17 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on where you have observed these working?  Provide a defintion of purpose.<ol>
-<li>Flask app object</li>
-<li>SQLAlchemy db object</li>
+<li>Flask app object<ul>
+<li>Flask creates the app object</li>
+<li>App is getting assigned the attributes of the object</li>
+<li>sets up for templete and database objects</li>
+</ul>
+</li>
+<li>SQLAlchemy db object<ul>
+<li>db = SQLAlchemy()</li>
+<li>sets up database project with properties from SQLAlchemy</li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
@@ -242,17 +251,41 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on these items in the class, purpose and defintion.<ul>
-<li>class User</li>
-<li>db.Model inheritance</li>
+<li>class User:defines templete for users    - db.Model inheritance: inherit ablility to make our class using database properties, methods, and attributes</li>
 <li>
-<em>init</em> method</li>
-<li>
-<code>@property</code>, <code>@&lt;column&gt;.setter</code>
+<em>init</em> method<ul>
+<li>helps create an object from a user class</li>
+<li>creates a u1 object using attributes</li>
+</ul>
 </li>
-<li>create, read, update, delete methods</li>
+<li>
+<code>@property</code>, <code>@&lt;column&gt;.setter</code><ul>
+<li>used to see what is inside an object and is used to change what is inside the object</li>
+<li>setter allows us to change attributes</li>
+<li>property shows us attributes (ex. value name= name is shown)</li>
+<li>used to set and gain data</li>
+</ul>
+</li>
+<li>create, read, update, delete methods<ul>
+<li>methods inside of a class</li>
+<li>interacts with the database</li>
+<li>creates a new user with attributes</li>
+<li>reads a user(s) and their attributes</li>
+<li>updates a user(s) and their attributes</li>
+<li>deletes a user(s) and their attributes</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When executing the cell above, there is no result because the templete is created but the data is not created</p>
 
 </div>
 </div>
@@ -511,8 +544,16 @@ Created new uid raven
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by<ul>
+<li>Object Relatial Model (ORM) returns the first match in class</li>
+</ul>
+</li>
+<li>user.password<ul>
+<li>checks to see if passwords match</li>
+<li>if not found = return False</li>
+<li>if found = return True</li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
