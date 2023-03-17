@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -569,18 +569,7 @@ Answer:</li>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Thomas Edison', 'toby', 'sha256$0wFOWnmWvEHaX3xZ$a3a8c92786fdcf4f02621190eb89838c9d05f136082e4fadd6ad3725a8bfbfd7', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$HOYP5d0Ke8nBfqCM$86a863c0e4f97c9e8f8d4bfa156ea2f0246ffa024c32a774eee758a1788841d8', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$fWD7RHMg2z6cb9fG$8f2a3d9ad5b0a719261136db96454737f084f093c944519d88825fc3f28c1151', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$PwM9L80kqjO7Z4VE$636c52dad5fd73b0025d579904248eccdb8d79d21cc473f1bea5646310be3883', '2023-03-15')
-(5, 'Indiana Jones', 'indi', 'sha256$Bs9hqBHUDXko0N02$4461875a431ac9f98bf49528379af9b5bcb8fb47d43c89880f9322c77fbdabcc', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$G2hBfbxijcmmYSr9$23cab10c0e6fc3c12015c8e13ec625eab3959e2e1ce0ee124f67ba300f6c674a', '1921-10-21')
-(1, 'Thomas Edison', 'toby', 'sha256$0wFOWnmWvEHaX3xZ$a3a8c92786fdcf4f02621190eb89838c9d05f136082e4fadd6ad3725a8bfbfd7', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$HOYP5d0Ke8nBfqCM$86a863c0e4f97c9e8f8d4bfa156ea2f0246ffa024c32a774eee758a1788841d8', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$fWD7RHMg2z6cb9fG$8f2a3d9ad5b0a719261136db96454737f084f093c944519d88825fc3f28c1151', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$PwM9L80kqjO7Z4VE$636c52dad5fd73b0025d579904248eccdb8d79d21cc473f1bea5646310be3883', '2023-03-15')
-(5, 'Indiana Jones', 'indi', 'sha256$Bs9hqBHUDXko0N02$4461875a431ac9f98bf49528379af9b5bcb8fb47d43c89880f9322c77fbdabcc', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$G2hBfbxijcmmYSr9$23cab10c0e6fc3c12015c8e13ec625eab3959e2e1ce0ee124f67ba300f6c674a', '1921-10-21')
+<pre>A new user record dhdh has been created
 </pre>
 </div>
 </div>
@@ -611,6 +600,46 @@ Answer:</li>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="c1"># Establish a connection to the database</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">"sqlite3.db"</span><span class="p">)</span>
+
+<span class="c1"># Use the connection object to execute SQL commands</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;sqlite3.Cursor at 0x7f406d48b0a0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
