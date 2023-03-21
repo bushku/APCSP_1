@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -166,17 +166,19 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+<p>Answer: A database schema is a templete for the database information to be stored</p>
 <ul>
-<li>
-<p>What is the purpose of identity Column in SQL database?</p>
-</li>
-<li>
-<p>What is the purpose of a primary key in SQL database?</p>
-</li>
-<li>
-<p>What are the Data Types in SQL table?</p>
-</li>
+<li>What is the purpose of identity Column in SQL database?</li>
 </ul>
+<p>Answer: The purpose of identity column in the SQL database is to make the objects are different and easily identifiable when trying to iterate through them.</p>
+<ul>
+<li>What is the purpose of a primary key in SQL database?</li>
+</ul>
+<p>Answer: The purpose of a primary key in an SQL database is to uniquely identify the different objects in the rows and columns.</p>
+<ul>
+<li>What are the Data Types in SQL table?</li>
+</ul>
+<p>Answer: In an SQL table, there are strings, integers, and date/time</p>
 
 </div>
 </div>
@@ -250,12 +252,19 @@ window.onload = wrap_img;
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?</li>
 </ul>
-<p>Answer:Connects to the database in order for us to interact with it</p>
+<p>Answer:A connection object onnects to the database in order for us to interact with it. I think that this means that when you run code with SQL, that code's information will show up in the database.</p>
 <ul>
 <li>Same for cursor object?</li>
+</ul>
+<p>Answer: An SQL cursor object "allows you to retrieve and manipulate rows from a result set one at a time".</p>
+<ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
+</ul>
+<p>Answer: The database schema are the attributes in the object (ex:id, name, uid, password, dob, etc.).</p>
+<ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p>Answer: Yes, "results" is an object. "results" has variables and functions, and all objects have variables and functions.</p>
 
 </div>
 </div>
@@ -329,9 +338,13 @@ window.onload = wrap_img;
 <p>Uses SQL INSERT to add row</p>
 <ul>
 <li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
 </ul>
 </blockquote>
+<p>Answer:I prefer OOP better for the CRUD operations. To me, the OOP seems more easy to follow and memorize. Although, this method seems to have less code, it is more efficient due to avoiding defining a class with setter and getter functions.</p>
+<ul>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+</ul>
+<p>Answer: SQL INSERT is a command that will add data into the database. This function is written within the code of each line that is being changed/added but the init is called once.</p>
 
 </div>
 </div>
@@ -393,10 +406,17 @@ window.onload = wrap_img;
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
 <li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>Answer:The hacked code helps with garbage data when someone is updating their password.</p>
+<ul>
+<li>Explain try/except, when would except occur?</li>
+</ul>
+<p>Answer: In this example, when a user is updating their password, the try/except looks for certain conditions. If the user tries to update an unknown user, it will send an unknown uid error. If the password is successfully changed, then the user will be notified. If neither of those are met, then the user will be notified with an alternative error.</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
+<p>Answer: Conn and cursor are redefined in every function before every try and except. Cursor.close() and the conn.close are also redefined. This is repeated likely due to connection objects and the need for the connection to the database to be unique every time.</p>
 
 </div>
 </div>
@@ -462,9 +482,13 @@ window.onload = wrap_img;
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
 <li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
 </ul>
 </blockquote>
+<p>Answer:Yes, delete is a dangerous operation because once an item is deleted, it cannot be found again. This operation is permanent.</p>
+<ul>
+<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+</ul>
+<p>Answer: The "f" and {} form formatted string literals. They allow the uid to be replaced with specific data to the situation.</p>
 
 </div>
 </div>
@@ -523,9 +547,13 @@ window.onload = wrap_img;
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
 <li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
+<p>Answer:The menu repeats so a user can perform multiple CRUD operations without having to run the code every time. This also allows a user to perform all of their desired edits in one place.</p>
+<ul>
+<li>Could you refactor this menu?  Make it work with a List?</li>
+</ul>
+<p>Answer: To make this menu work with a list, I may be able to define a list that has all of the functions, and use their indices to call them. I am not sure if this would work but it is worth a shot.</p>
 
 </div>
 </div>
