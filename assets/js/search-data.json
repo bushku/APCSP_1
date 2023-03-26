@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Big Idea 2 Quiz Corrections",
-            "content": ".",
+            "content": "Reason C is correct: Using 7 bits will allow up to 128 sequences because 2^7 = 128. Therefore, a minimum of 7 bits is needed. Reason D is correct: The information in the products list can be used to create a list of the product IDs of all products that use AA batteries. Since the products list and the purchases list have the product ID information in common, the list of product IDs can be used in the purchases list to create a list of customer IDs of all the customers who purchased products that use AA batteries. Finally, since the purchases list and the customers list have the customer ID in common, the list of customer IDs can be used to generate a list of e-mail addresses of the customers who purchased products that use AA batteries. Reason D is correct: Because the relative order of the rows is not changed when the filters are applied, the order in which the actions are performed does not matter. The filtering can occur either before or after the spreadsheet is sorted by rating. .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/03/27/Scoring.html",
             "relUrl": "/apcsp/2023/03/27/Scoring.html",
             "date": " • Mar 27, 2023"
