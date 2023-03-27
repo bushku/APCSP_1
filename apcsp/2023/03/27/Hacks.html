@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -114,8 +114,9 @@ window.onload = wrap_img;
 
 <h2 id="time-complexity-analysis-questions">
 <a class="anchor" href="#time-complexity-analysis-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Time Complexity Analysis Questions</h2>
-<p>Question 1
-What is the time and space complexity of the following code?</p>
+<p>Question 1</p>
+
+<p>What is the time and space complexity of the following code?</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 0
 b = 0
 for i in range(N):
@@ -130,6 +131,136 @@ for i in range(M):
   <li>O(N + M) time, O(1) space</li>
   <li>O(N * M) time, O(N + M) space</li>
 </ol>
+
+<p>My answer: 3</p>
+
+<p>Question 2</p>
+
+<p>What is the time complexity of the following code?</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 0
+for i in range(N):
+  for j in reversed(range(i,N)):
+    a = a + i + j
+</code></pre></div></div>
+<ol>
+  <li>O(N)</li>
+  <li>O(N*log(N))</li>
+  <li>O(N * Sqrt(N))</li>
+  <li>O(N*N)</li>
+</ol>
+
+<p>My answer: 4</p>
+
+<p>Question 3
+What is the time complexity of the following code?</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = 0
+for i in range(n//2, n):
+  for j in range(2, n, pow(2,j)):
+        k = k + n / 2
+</code></pre></div></div>
+
+<ol>
+  <li>O(n)</li>
+  <li>O(nlog(n))</li>
+  <li>O(n^2)</li>
+  <li>O(n^2(log(n)))</li>
+</ol>
+
+<p>My answer: 2</p>
+
+<p>Question 4
+What does it mean when we say that an algorithm X is asymptotically more efficient than Y?</p>
+
+<ol>
+  <li>X will always be a better choice for small inputs</li>
+  <li>X will always be a better choice for large inputs</li>
+  <li>Y will always be a better choice for small inputs</li>
+  <li>X will always be a better choice for all inputs</li>
+</ol>
+
+<p>My answer: 2</p>
+
+<p>Question 5
+What is the time complexity of the following code?</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 0
+i = N
+while (i &gt; 0):
+  a += i
+  i //= 2
+</code></pre></div></div>
+<ol>
+  <li>O(N)</li>
+  <li>O(Sqrt(N))</li>
+  <li>O(N / 2)</li>
+  <li>O(log N)
+My answer: 4</li>
+</ol>
+
+<p>Question 6
+Which of the following best describes the useful criterion for comparing the efficiency of algorithms?</p>
+
+<ol>
+  <li>Time</li>
+  <li>Memory</li>
+  <li>Both of the above</li>
+  <li>None of the above</li>
+</ol>
+
+<p>My answer: 3</p>
+
+<p>Question 7
+How is time complexity measured?</p>
+
+<ol>
+  <li>By counting the number of algorithms in an algorithm.</li>
+  <li>By counting the number of primitive operations performed by the algorithm on a given input size.</li>
+  <li>By counting the size of data input to the algorithm.</li>
+  <li>None of the above</li>
+</ol>
+
+<p>My answer: 2</p>
+
+<p>Question 8
+What will be the time complexity of the following code?</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for i in range(n):
+  i=i*k
+</code></pre></div></div>
+<ol>
+  <li>O(n)</li>
+  <li>O(k)</li>
+  <li>O(logk(n))</li>
+  <li>O(logn(k))</li>
+</ol>
+
+<p>My answer: 3</p>
+
+<p>Question 9
+What will be the time complexity of the following code?</p>
+
+<p>value = 0
+for i in range(n):
+  for j in range(i):
+    value=value+1</p>
+<ol>
+  <li>O(n)</li>
+  <li>O(n+1)</li>
+  <li>O(n(n-1))</li>
+  <li>O(n(n+1))</li>
+</ol>
+
+<p>My answer: 3</p>
+
+<p>Question 10
+Algorithm A and B have a worst-case running time of O(n) and O(logn), respectively. Therefore, algorithm B always runs faster than algorithm A.</p>
+
+<ol>
+  <li>True</li>
+  <li>False</li>
+</ol>
+
+<p>My answer: 2</p>
+
+<p>Reflection on the practice problems: The practice problems helped me understand space and time complexity even better.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
