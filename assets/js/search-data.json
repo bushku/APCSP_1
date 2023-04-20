@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Introduction to Data Analysis with NumPy and Pandas",
-            "content": "Data Analysis is the process of examining data sets in order to find trends and draw conclusions about the given information. Data analysis is important because it helps businesses optimize their performances. .",
+            "content": "Data Analysis . Data Analysis is the process of examining data sets in order to find trends and draw conclusions about the given information. Data analysis is important because it helps businesses optimize their performances. Pands library involves a lot of data analysis in Python. NumPy Library is mostly used for working with numerical values and it makes it easy to apply with mathematical functions. . Learning Objectives . learn more about NumPy and Pands libraries by using code examples from our project | Imporrt and manipulate data using NumPy and Pandas | Perform data analysis tasks using NumPy and Pandas | .",
             "url": "https://bushku.github.io/APCSP_1/apcsp/2023/04/18/Lesson.html",
             "relUrl": "/apcsp/2023/04/18/Lesson.html",
             "date": " • Apr 18, 2023"
