@@ -30,40 +30,40 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Data File: one type of data file is a json file
 This is a json file I used in the beginning of this trimester in this class:
 
+![Data File]({{site.baseurl}}/images/Data File.png)
+
 - Inspect Running Code: use debugger feature to see what's happening in code, step by step
 - Inspect Variables: use debugger feature to see when a variable is being created, used, and what is assigned to it
 
 [Here is my BMI Database](https://bushku.github.io/APCSP_1/2023/03/19/Database.html)
 
 
-![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
-
-
 ### The Internet
 > Watch/review College Board Daily Video for 4.1.1
 
 - Essential Knowledge
-    - A computing device is a physical artifact that can run a program. Some examples include computers, tablets, servers, routers, and smart sensors.
-    - A computing system is a group of computing devices and programs working together for a common purpose.
-    - A computer network is a group of interconnected computing devices capable of sending or receiving data.
-    - A computer network is a type of computing system. 
-    - A path between two computing devices on a computer network (a sender and a receiver) is a sequence of directly connected computing devices that begins at the sender and ends at the receiver.
-    - Routing is the process of finding a path from sender to receiver.
-    - The bandwidth of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
-    - Bandwidth is usually measured in bits per second
+    - A <span style="color: green;">computing device</span> is a physical artifact that can run a program. Some examples include computers, tablets, servers, routers, and smart sensors.
+    - A <span style="color: red;">computing system</span> is a group of computing devices and programs working together for a common purpose.
+    - A <span style="color: pink;">computing network</span> is a group of interconnected computing devices capable of sending or receiving data.
+    - A <span style="color: pink;">computer network</span> is a type of computing system. 
+    - A <span style="color: blue;">Path</span> between two computing devices on a computer network (a sender and a receiver) is a sequence of directly connected computing devices that begins at the sender and ends at the receiver.
+    - <span style="color: purple;">Routing</span> is the process of finding a path from sender to receiver.
+    - The <span style="color: orange;">bandwidth</span> of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
+    - <span style="color: orange;">Bandwidth</span> is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - <span style="color: blue;">Path</span> 
+    - <span style="color: purple;">Route</span>
+    - <span style="color: red;">Computing System</span>
+    - <span style="color: green;">Computing Device</span>
+    - <span style="color: orange;">Bandwidth</span>
+    - <span style="color: pink;">Computing Network</span>
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
 
+![True and False Questions]({{site.baseurl}}/images/True and False Questions.png)
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
@@ -82,7 +82,10 @@ This is a json file I used in the beginning of this trimester in this class:
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
+![Full Stack]({{site.baseurl}}/images/Full Stack.png)
+
+My diagram:
+![Computer System and Networks diagram]({{site.baseurl}}/images/Computer System and Networks diagram.png)
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -116,11 +119,34 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+Ex 1:
+![Fault Tolerance Ex 1]({{site.baseurl}}/images/Fault Tolerance Ex 1.png)
+- This example is fault tolerant since there are at least 2 paths to every letter. That way, if one path would go out, the network would still have ways to access the letter.
+
+Ex 2:
+![Fault Tolerance Ex 2]({{site.baseurl}}/images/Fault Tolerance Ex 2.png)
+- This example is not fault tolerant. The letter F only has one path to access it. That means that if it goes out, F would be cut off completely, making the network is not fault tolerant.
+
+Ex 3:
+![Fault Tolerance Ex 3]({{site.baseurl}}/images/Fault Tolerance Ex 3.png)
+- This example is not fault tolerant since A to G only has one path. If it were to go out, the letter A would be competely cut off. This means that the network is not fault tolerant.
+
+Overall, I have learned that I have to look carefully at every letter to find out if a network is actually fault tolerant. In both of these examples that aren’t fault tolerant, only one letter is the issue. Every other piece has multiple paths to it.
+
+Question 1:
+![Problem 1]({{site.baseurl}}/images/Problem 1.png)
+No matter how many paths are available for data to take in a network, it will only end up using one. This means having a fault tolerant network is “unnecessary” in this situation (nothing goes wrong, fragile network).
+
+Question 2:
+![Problem 2]({{site.baseurl}}/images/Problem 2.png)
+Adding a connection between A and B would allow A to have more than 1 path, making the network fault-tolerant.
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
+
+Data is naturally distributed between Frontend and Backend architecture.
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
