@@ -32,6 +32,7 @@ This is a json file I used in the beginning of this trimester in this class:
 
 - Inspect Running Code: use debugger feature to see what's happening in code, step by step
 - Inspect Variables: use debugger feature to see when a variable is being created, used, and what is assigned to it
+
 [Here is my BMI Database](https://bushku.github.io/APCSP_1/2023/03/19/Database.html)
 
 
