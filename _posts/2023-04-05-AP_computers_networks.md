@@ -30,7 +30,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Data File: one type of data file is a json file
 This is a json file I used in the beginning of this trimester in this class:
 
-![Data File.png]({{site.baseurl}}/images/Data File.png "https://github.com/bushku/APCSP_1")
+![Data file.png]({{site.baseurl}}/images/Data file.png "https://github.com/bushku/APCSP_1")
 
 - Inspect Running Code: use debugger feature to see what's happening in code, step by step
 - Inspect Variables: use debugger feature to see when a variable is being created, used, and what is assigned to it
@@ -119,25 +119,25 @@ The "network" layer is responsible for ***routing data packets between networks*
 - Complete the network activity, summarize your understanding of fault tolerance.
 
 Ex 1:
-![Fault Tolerance Ex 1.png]({{site.baseurl}}/images/Fault Tolerance Ex 1.png "https://github.com/bushku/APCSP_1")
+
 - This example is fault tolerant since there are at least 2 paths to every letter. That way, if one path would go out, the network would still have ways to access the letter.
 
 Ex 2:
-![Fault Tolerance Ex 2.png]({{site.baseurl}}/images/Fault Tolerance Ex 2.png "https://github.com/bushku/APCSP_1")
+
 - This example is not fault tolerant. The letter F only has one path to access it. That means that if it goes out, F would be cut off completely, making the network is not fault tolerant.
 
 Ex 3:
-![Fault Tolerance Ex 3.png]({{site.baseurl}}/images/Fault Tolerance Ex 3.png "https://github.com/bushku/APCSP_1")
+
 - This example is not fault tolerant since A to G only has one path. If it were to go out, the letter A would be competely cut off. This means that the network is not fault tolerant.
 
 Overall, I have learned that I have to look carefully at every letter to find out if a network is actually fault tolerant. In both of these examples that aren’t fault tolerant, only one letter is the issue. Every other piece has multiple paths to it.
 
 Question 1:
-![Problem 1.png]({{site.baseurl}}/images/Problem 1.png "https://github.com/bushku/APCSP_1")
+
 No matter how many paths are available for data to take in a network, it will only end up using one. This means having a fault tolerant network is “unnecessary” in this situation (nothing goes wrong, fragile network).
 
 Question 2:
-![Problem 2.png]({{site.baseurl}}/images/Problem 2.png "https://github.com/bushku/APCSP_1")
+
 Adding a connection between A and B would allow A to have more than 1 path, making the network fault-tolerant.
 
 ### Parallel and Distributed Computing
