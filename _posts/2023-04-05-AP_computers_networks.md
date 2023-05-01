@@ -81,7 +81,7 @@ This is a json file I used in the beginning of this trimester in this class:
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack.png]({{site.baseurl}}/images/Full Stack.png "https://github.com/bushku/APCSP_1")
+
 
 My diagram:
 ![Computer System and Networks diagram.png]({{site.baseurl}}/images/Computer System and Networks diagram.png "https://github.com/bushku/APCSP_1")
