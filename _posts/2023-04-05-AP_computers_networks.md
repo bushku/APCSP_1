@@ -30,7 +30,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Data File: one type of data file is a json file
 This is a json file I used in the beginning of this trimester in this class:
 
-![Data File]({{site.baseurl}}/images/Data File.png)
+![Data File.png]({{site.baseurl}}/images/Data File.png "https://github.com/bushku/APCSP_1")
 
 - Inspect Running Code: use debugger feature to see what's happening in code, step by step
 - Inspect Variables: use debugger feature to see when a variable is being created, used, and what is assigned to it
@@ -62,8 +62,7 @@ This is a json file I used in the beginning of this trimester in this class:
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
-
-![True and False Questions]({{site.baseurl}}/images/True and False Questions.png)
+![True and False Questions.png]({{site.baseurl}}/images/True and False Questions.png "https://github.com/bushku/APCSP_1")
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
@@ -82,10 +81,10 @@ This is a json file I used in the beginning of this trimester in this class:
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack]({{site.baseurl}}/images/Full Stack.png)
+![Full Stack.png]({{site.baseurl}}/images/Full Stack.png "https://github.com/bushku/APCSP_1")
 
 My diagram:
-![Computer System and Networks diagram]({{site.baseurl}}/images/Computer System and Networks diagram.png)
+![Computer System and Networks diagram.png]({{site.baseurl}}/images/Computer System and Networks diagram.png "https://github.com/bushku/APCSP_1")
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -120,25 +119,25 @@ The "network" layer is responsible for ***routing data packets between networks*
 - Complete the network activity, summarize your understanding of fault tolerance.
 
 Ex 1:
-![Fault Tolerance Ex 1]({{site.baseurl}}/images/Fault Tolerance Ex 1.png)
+![Fault Tolerance Ex 1.png]({{site.baseurl}}/images/Fault Tolerance Ex 1.png "https://github.com/bushku/APCSP_1")
 - This example is fault tolerant since there are at least 2 paths to every letter. That way, if one path would go out, the network would still have ways to access the letter.
 
 Ex 2:
-![Fault Tolerance Ex 2]({{site.baseurl}}/images/Fault Tolerance Ex 2.png)
+![Fault Tolerance Ex 2.png]({{site.baseurl}}/images/Fault Tolerance Ex 2.png "https://github.com/bushku/APCSP_1")
 - This example is not fault tolerant. The letter F only has one path to access it. That means that if it goes out, F would be cut off completely, making the network is not fault tolerant.
 
 Ex 3:
-![Fault Tolerance Ex 3]({{site.baseurl}}/images/Fault Tolerance Ex 3.png)
+![Fault Tolerance Ex 3.png]({{site.baseurl}}/images/Fault Tolerance Ex 3.png "https://github.com/bushku/APCSP_1")
 - This example is not fault tolerant since A to G only has one path. If it were to go out, the letter A would be competely cut off. This means that the network is not fault tolerant.
 
 Overall, I have learned that I have to look carefully at every letter to find out if a network is actually fault tolerant. In both of these examples that aren’t fault tolerant, only one letter is the issue. Every other piece has multiple paths to it.
 
 Question 1:
-![Problem 1]({{site.baseurl}}/images/Problem 1.png)
+![Problem 1.png]({{site.baseurl}}/images/Problem 1.png "https://github.com/bushku/APCSP_1")
 No matter how many paths are available for data to take in a network, it will only end up using one. This means having a fault tolerant network is “unnecessary” in this situation (nothing goes wrong, fragile network).
 
 Question 2:
-![Problem 2]({{site.baseurl}}/images/Problem 2.png)
+![Problem 2.png]({{site.baseurl}}/images/Problem 2.png "https://github.com/bushku/APCSP_1")
 Adding a connection between A and B would allow A to have more than 1 path, making the network fault-tolerant.
 
 ### Parallel and Distributed Computing
