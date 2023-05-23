@@ -4,23 +4,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Page 6 of 6 for fastpages | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>Mario Sprite Sheet | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="fastpages" />
+<meta property="og:title" content="Mario Sprite Sheet" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://bushku.github.io/APCSP_1/page6/" />
-<meta property="og:url" content="https://bushku.github.io/APCSP_1/page6/" />
+<meta name="description" content="Use JavaScript without external libararies to display all the animations in a sprite sheet." />
+<meta property="og:description" content="Use JavaScript without external libararies to display all the animations in a sprite sheet." />
+<link rel="canonical" href="https://bushku.github.io/APCSP_1/frontend/mario" />
+<meta property="og:url" content="https://bushku.github.io/APCSP_1/frontend/mario" />
 <meta property="og:site_name" content="fastpages" />
-<meta property="og:image" content="https://bushku.github.io/APCSP_1/images/logo.png" />
-<meta property="og:type" content="website" />
-<link rel="prev" href="https://bushku.github.io/APCSP_1/page5/" />
+<meta property="og:image" content="https://bushku.github.io/APCSP_1/images/mario_animation.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-07-19T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://bushku.github.io/APCSP_1/images/logo.png" />
-<meta property="twitter:title" content="fastpages" />
+<meta property="twitter:image" content="https://bushku.github.io/APCSP_1/images/mario_animation.png" />
+<meta property="twitter:title" content="Mario Sprite Sheet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"fastpages","image":"https://bushku.github.io/APCSP_1/images/logo.png","url":"https://bushku.github.io/APCSP_1/page6/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-19T00:00:00-05:00","datePublished":"2022-07-19T00:00:00-05:00","description":"Use JavaScript without external libararies to display all the animations in a sprite sheet.","headline":"Mario Sprite Sheet","image":"https://bushku.github.io/APCSP_1/images/mario_animation.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bushku.github.io/APCSP_1/frontend/mario"},"url":"https://bushku.github.io/APCSP_1/frontend/mario"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/APCSP_1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://bushku.github.io/APCSP_1/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/APCSP_1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,54 +72,94 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+        <!-- Hack 1: find your own sprite -->
+<!-- Hack 2: make you own sprite display -->
+<!-- Hack 3: come up with a new event or sequence, reference: https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event-->
 
-<p><img src="/APCSP_1/images/diagram.png" alt="" title="https://github.com/fastai/fastpages" /></p>
+<table>
+    <tr>
+        <td><a href="/APCSP_1//2022/09/20/JavaScript.html">Java Script Kernel &amp; Table</a></td>
+        <td><a href="/APCSP_1//frontend/overview">Overview</a></td>
+        <td><a href="/APCSP_1//2022/08/26/bashblog.html">Bash Blog</a></td>
+        <td><a href="/APCSP_1/techtalk/rapidapi">Python RapidAPI</a></td>
+    </tr>
+</table>
 
-<p><a href="https://github.com/fastai/fastpages">fastpages</a> automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts.  A full list of features can be found on <a href="https://github.com/fastai/fastpages">GitHub</a>.</p>
+<!---
+Sprite files are a collection of animations that are combined into a single file. The _data/mario.yml file has metadata description for the sprit file.  Each sprite is seperated by pixels horizontally and veritically.
+-->
+<p><!--- Liquid concatentation --->
+  <!--- Liquid list variable created from file containing mario metatdata for sprite--->
+ <!--- Liquid integer assignment ---></p>
 
-<p>You can edit the <code class="language-plaintext highlighter-rouge">index.html</code> file to change this content.</p>
+<!---
+This <div> class "container" has rows and columns.  Each row/col is a frame and has metadata like ID (rest, walk, etc), a default image, and an animation sequence triggered by mouse over.
+-->
+<div class="container">
+  <!---
+  Loop over the 'hash' list to generate repeating HTML lines for animations.
+  -->
+  
+</div>
 
-<h1 id="posts">Posts</h1>
+<!-- Embedded Cascading Style Sheet (CSS) rules, defines how HTML element visualized --->
+<style>
+  /* CSS style rules for coresponding <p> tag HTML elements
+    Background: .sprite has url reference to sprite file, pixel height and width of frames
+    #: row/col position of id in sprite file
+    Transform: allows HTML display to be scaled
+    Text: contains properties for title
+  */
+  .sprite {
+    background-image: url('/APCSP_1/images/mario_animation.png');
+    background-repeat: no-repeat;
+    height: 256px;
+    width: 256px;
+    transform: scale(0.5);  /* scales the display size of sprite frame in HTML */
+    font-size: 2em;
+    text-align: center;
+  }
 
-
-
+  /* Liquid for loop is used to generate CSS from Jekyll animations list
+     ID: #id[0] associate this CSS with id=id[0] in HTML
+     Col, Row: background-position position of frame in sprite
+  */
   
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+</style>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+<!--- Embedded executable code--->
+<script>
+  var intervalIDs = {}; // Object to store interval IDs
+  const pixels = 256; //size of each frame in the sprite, set by liquid constant
+  const interval = 100; //animation time interval
 
- 
-  
+  function startAnimate(id, row, col1, frames) {
+      var col = col1;  //start at 1st column/frame in series of frames
+      
+      // Use the animation ID as the key for storing the interval ID
+      intervalIDs[id] = setInterval ( () => {
+        /* Each pass set the CSS backgroundPosition property to point to next background frame
+         * Formula: row stays the same, but column is mutated "+ pixels" each interval
+         * Modulo Operator: frames * pixels is upper bound
+         *                  col + pixels is increment
+         *                  remainder is the col position
+         * Offset: "col1" is offset of 1st image in series, col1 can start in middle of page
+        */
+        document.getElementById(id).style.backgroundPosition = `-${col}px -${row}px`;
+        col -= col1; // remove 1st frame offset, temporarily
+        col = (col + pixels) % (frames * pixels);  // use modulo operator to cycle through sequence
+        col += col1; // restore 1st frame offset
+      }
+      , interval ); //time of interval
+  }
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/APCSP_1/frontend/mario">
-    Mario Sprite Sheet
-    </a>
-</h3><p class="post-meta-description">Use JavaScript without external libararies to display all the animations in a sprite sheet.</p><p class="post-meta">Jul 19, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/APCSP_1/apcsp/2022/02/10/Results.html">
-    College Board Quiz Results
-    </a>
-</h3><p class="post-meta-description">These are my quiz results.</p><p class="post-meta">Feb 10, 2022</p>
-</li></ul>
+  function stopAnimate(id) {  //stop animate task ID
+    clearInterval(intervalIDs[id]);
+  } 
+</script>
 
-    
-      <div class="pager">
-        <ul class="pagination">
-          <li><a href="/APCSP_1/page5/" class="previous-page">5</a></li>
-          <li><div class="current-page">6</div></li>
-          <li><div class="pager-edge">•</div></li>
-        </ul>
-      </div></div>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/APCSP_1/"></data>
