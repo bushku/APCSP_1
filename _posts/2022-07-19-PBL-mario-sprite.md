@@ -4,8 +4,7 @@ comments: true
 layout: base
 description: Use JavaScript without external libararies to display all the animations in a sprite sheet.
 image: /images/Dog Animation.png
-categories: []
-tags: [APCSP]
+categories: [APCSP]
 ---
 <!-- Hack 1: find your own sprite -->
 <!-- Hack 2: make you own sprite display -->
