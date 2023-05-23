@@ -3,10 +3,9 @@ title: Mario Sprite Sheet
 comments: true
 layout: base
 description: Use JavaScript without external libararies to display all the animations in a sprite sheet.
-permalink: /frontend/mario
-image: /images/mario_animation.png
+image: /images/Dog Animation.png
 categories: []
-tags: [javascript]
+tags: [APCSP]
 ---
 <!-- Hack 1: find your own sprite -->
 <!-- Hack 2: make you own sprite display -->
