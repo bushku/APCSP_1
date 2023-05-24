@@ -3,7 +3,6 @@ title: Dog Sprite
 layout: base
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /dog/sprite
-categories: [week 35]
 ---
 
 <html>
@@ -28,7 +27,7 @@ categories: [week 35]
         ];
         // Load the sprite sheet image
         var spriteSheet = new Image();
-        spriteSheet.src = "Dog Animation.png";
+        spriteSheet.src = "dogsprite.png";
         // Define frame dimensions
         var frameWidth = 64;
         var frameHeight = 64;
