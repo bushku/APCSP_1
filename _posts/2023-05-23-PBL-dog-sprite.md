@@ -3,6 +3,7 @@ title: Dog Sprite
 layout: base
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /dog/sprite
+image: /images/dogsprite.png
 ---
 
 <html>
