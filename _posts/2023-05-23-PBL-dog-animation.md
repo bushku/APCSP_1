@@ -1,169 +1,73 @@
 ---
-title: Dog in Motion
+title: Song Table
 comments: true
 layout: base
-description: Use JavaScript without external libararies to animate Mario moving across screen.
-permalink: /frontend/dog
-image: /images/dogsprite.png
 ---
 
-{% include nav_frontend.html %}
+<head>
+    <!-- load jQuery and DataTables style and scripts -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+</head>
+<table id="flaskTable" class="table" style="width:100%">
+    <thead id="flaskHead">
+        <tr>
+            <th>Name</th>
+            <th>Singer</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody id="flaskBody"></tbody>
+</table>
 
-{% assign sprite_file = site.baseurl | append: page.image %}  <!--- Liquid concatentation --->
-{% assign hash = site.data.dog_metadata %}  <!--- Liquid list variable created from file containing mario metatdata for sprite --->
-{% assign pixels = 256 %} <!--- Liquid integer assignment --->
-
-<!--- HTML for page contains <p> tag named "dog" and class properties for a "sprite"  -->
-<p id="dog" class="sprite"></p>
-  
-
-<!--- Embedded Cascading Style Sheet (CSS) rules, defines how HTML elements look --->
-<style>
-  /* CSS style rules for the elements id and class above...
-  */
-  .sprite {
-    height: {{pixels}}px;
-    width: {{pixels}}px;
-    background-image: url('{{sprite_file}}');
-    background-repeat: no-repeat;
-  }
-
-  /* background position of sprite element */
-  #dog {
-    background-position: calc({{animations[0].col}} * {{pixels}} * -1px) calc({{animations[0].row}} * {{pixels}} * -1px);
-  }
-</style>
-
-<!--- Embedded executable code--->
 <script>
-  ////////// convert yml hash to javascript key value objects /////////
-
-  var obj = {}; // key, value object
-  {% for key in hash %}  
-  
-  var key = "{{key | first}}"  // key
-  var values = {} //values
-  values["row"] = {{key.row}}
-  values["col"] = {{key.col}}
-  values["frames"] = {{key.frames}}
-  obj[key] = values; // key, values added
-
-  {% endfor %}
-
-
-  ////////// global variables /////////
-
-  var tID; //capture setInterval() task ID
-  var positionX = 0; // current position of sprite in X direction
-  var currentSpeed = 0;
-  const dog = document.getElementById("dog"); //HTML element of sprite
-  const pixels = {{pixels}}; //pixel offset of images in the sprite, set by liquid constant
-  const interval = 100; //animation time interval
-
-  ////////// animation control /////////
-  dog.style.position = "absolute";  //set sprite to move idependent of other elements on screen
-
-  //animation controller
-  function startAnimate(obj, speed) {
-    var frame = 0;
-    var row = obj["row"] * pixels;
-    currentSpeed = speed;
-
-    //setInterval function for animation 
-    tID = setInterval(() => { //tID is set to capture task ID
-      //// animation function ////
-
-      //animate sprite
-      col = (frame + obj["col"]) * pixels;  //calculate col position
-      dog.style.backgroundPosition = `-${col}px -${row}px`; //update frame
-      dog.style.left = `${positionX}px`; //move element on X
-
-      //next X position
-      positionX += speed;  
-      //next Frame, modulo recycles index based on number of frames
-      frame = (frame + 1) % obj["frames"]; 
-
-      //viewport follows sprite
-      const viewportWidth = window.innerWidth;
-      if (positionX > viewportWidth - pixels) {
-        document.documentElement.scrollLeft = positionX - viewportWidth + pixels;  //scroll
-      }
-    }, interval); //time setting of interval
-  }
-
-  //animation ends by stopping task
-  function stopAnimate() {  
-    clearInterval(tID); //clear setInterval function using task ID
-  } 
-
-
-  ////////// event control /////////
-
-  //key events that enable animations
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowRight") {
-      event.preventDefault(); // prevent default browser action
-      if (event.repeat) { //on hold key
-        stopAnimate();
-        startAnimate(obj["Cheer"],0);  //rest animation 
-      } else { //on tap key
-        if (currentSpeed === 0) { // if at rest, go to walking
-          stopAnimate();
-          startAnimate(obj["Walk"],3);  //walking animation
-        } else if (currentSpeed === 3) { // if walking, go to running
-          stopAnimate();
-          startAnimate(obj["Run1"],6);  //running animation
+    // Define the Song class
+    class Song {
+        constructor(name, singer, year) {
+            this.name = name;
+            this.singer = singer;
+            this.year = year;
         }
-      }
-    } else if (event.key === "ArrowLeft") {
-      event.preventDefault(); // prevent default browser action
-      if (event.repeat) { //on hold key
-        // stop animation 
-        stopAnimate();
-      } else { //on tap key
-        stopAnimate();
-        startAnimate(obj["Puff"],0); //resting animation
-      }
     }
-  });
 
-  //touch events that enable animations
-  window.addEventListener("touchstart", (event) => {
-    event.preventDefault(); // prevent default browser action
-    if (event.touches[0].clientX > window.innerWidth / 2) {
-      // move right
-      if (currentSpeed === 0) { // if at rest, go to walking
-        stopAnimate();
-        startAnimate(obj["Walk"],3);  //walking animation
-      } else if (currentSpeed === 3) { // if walking, go to running
-        stopAnimate();
-        startAnimate(obj["Run1"],6);  //running animation
-      }
-    } else {
-      // move left
-      stopAnimate();
-      startAnimate(obj["Puff"],0); //resting animation
-    }
-  });
+    $(document).ready(() => {
+    // Define the Song class
+        class Song {
+            constructor(name, singer, year) {
+                this.name = name;
+                this.singer = singer;
+                this.year = year;
+            }
+        }
 
-  //stop animation on window blur
-  window.addEventListener("blur", () => {
-    stopAnimate();
-  });
+    // Example data
+        const songs = [
+            new Song("Would You go With Me", "Josh Turner", 2006),
+            new Song("Brown Chicken Brown Cow", "Trace Adkins", 2010),
+            new Song("Just Give Me A Reason", "P!nk", 2012)
+        ];
 
-  //start animation on window focus
-  window.addEventListener("focus", () => {
-    stopAnimate();
-    startAnimate(obj["Flip"],0);
-  });
+    // Get the table body element
+        const tableBody = document.getElementById("flaskBody");
 
-  //start animation on page load or page refresh
-  document.addEventListener("DOMContentLoaded", () => {
-    // adjust sprite size for high pixel density devices
-    const scale = window.devicePixelRatio;
-    const sprite = document.querySelector(".sprite");
-    sprite.style.transform = `scale(${0.2 * scale})`;
-    startAnimate(obj["Rest"],0);
-  });
+    // Function to populate the table
+        function populateTable(data) {
+        // Clear any existing rows
+            tableBody.innerHTML = "";
 
+        // Create a row for each song
+            data.forEach(song => {
+                const row = document.createElement("tr");
+                row.innerHTML = `<td>${song.name}</td><td>${song.singer}</td><td>${song.year}</td>`;
+                tableBody.appendChild(row);
+            });
+        }
+
+    // Call the function with the song data to populate the table
+        populateTable(songs);
+
+    // Initialize DataTables plugin
+        $('#flaskTable').DataTable();
+    });
 </script>
