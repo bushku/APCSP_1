@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Dog in Motion",
-            "content": "Java Script Kernel &amp; Table | Overview | Bash Blog | Python RapidAPI | . . .",
-            "url": "https://bushku.github.io/APCSP_1/frontend/dog",
-            "relUrl": "/frontend/dog",
+            "title": "Song Table",
+            "content": ". Name Singer Year .",
+            "url": "https://bushku.github.io/APCSP_1/2023/05/23/PBL-dog-animation.html",
+            "relUrl": "/2023/05/23/PBL-dog-animation.html",
             "date": " • May 23, 2023"
         }
         
